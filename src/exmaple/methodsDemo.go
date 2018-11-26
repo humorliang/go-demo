@@ -26,9 +26,15 @@ type circle struct {
 func (r reactAngle) area() float64 {
 	return r.height * r.with
 }
+func (r reactAngle) perim() float64 {
+	return 2*r.height + 2*r.with
+}
 
 func (c circle) area() float64 {
-	return 2 * math.Pi * c.radius * c.radius
+	return math.Pi * c.radius * c.radius
+}
+func (c circle) perim() float64 {
+	return 2 * math.Pi * c.radius
 }
 
 // 当接受者为指针类型时可以修改接受者
