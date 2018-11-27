@@ -20,5 +20,5 @@ type writeOp struct {
 }
 
 func main() {
-	//
+	//定义
 }
