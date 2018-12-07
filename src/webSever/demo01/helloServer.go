@@ -13,6 +13,7 @@ func sayHello(w http.ResponseWriter, r *http.Request) {
 	//收到的请求首先必须要进行参数解析，否则后续的请求值都为空
 	r.ParseForm()
 
+	//
 	fmt.Println(r.PostForm==nil)
 }
 
