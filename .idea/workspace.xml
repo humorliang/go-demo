@@ -2,86 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d9dd69-0e6c-4cd0-9bfd-aec65e63f6a5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/conf/app.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/controllers/object.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/controllers/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/models/object.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/models/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/routers/router.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apiproject/tests/default_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/CommandLineFlags" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/CommandLineFlags" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/CommandLineFlags.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/CommandLineFlags.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/arraysDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/arraysDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/automicCountersDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/automicCountersDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/base64EncodingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/base64EncodingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/channelDirectionsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/channelDirectionsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/channelSynchronizationDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/channelSynchronizationDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/channelsBufferingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/channelsBufferingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/channelsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/channelsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/closingChannels.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/closingChannels.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/closuresDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/closuresDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/collectionFunctionsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/collectionFunctionsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/commandLineArgumentsDemo" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/commandLineArgumentsDemo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/commandLineArgumentsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/commandLineArgumentsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/constantsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/constantsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/deferDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/deferDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/environmentVariablesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/environmentVariablesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/epochDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/epochDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/errorsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/errorsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/execingProcessesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/execingProcessesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/exitDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/exitDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/forDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/forDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/functionsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/functionsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/goroutinesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/goroutinesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/helloworld" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/helloworld" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/helloworld.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/helloworld.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/ifElseDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/ifElseDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/interfacesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/interfacesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/jsonDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/jsonDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/lineFiltersDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/lineFiltersDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/mapsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/mapsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/methodsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/methodsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/multipleReturnValuesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/multipleReturnValuesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/mutexesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/mutexesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/nonBlockChannelOperations.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/nonBlockChannelOperations.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/numberparsingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/numberparsingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/panicDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/panicDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/pointersDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/pointersDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/randomNumbers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/randomNumbers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/rangeDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/rangeDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/rangeOverChannels.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/rangeOverChannels.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/rateLimitingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/rateLimitingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/readingFilesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/readingFilesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/recursionDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/recursionDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/regulerExpressionsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/regulerExpressionsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/runMain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/runMain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/selectDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/selectDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/sha1HashDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/sha1HashDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/signalsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/signalsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/slicesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/slicesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/sortindByFuncDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/sortindByFuncDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/sortingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/sortingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/spawningProcessesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/spawningProcessesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/statefulGoroutinesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/statefulGoroutinesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/stringFormattingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/stringFormattingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/stringFuncDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/stringFuncDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/structsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/structsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/switchDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/switchDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/tickersDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/tickersDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/timeDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/timeDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/timeParsingFormatting.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/timeParsingFormatting.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/timeoutsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/timeoutsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/timersDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/timersDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/urlParsingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/urlParsingDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/valuesDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/valuesDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/variableDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/variableDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/variadicFuncDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/variadicFuncDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/workerPoolsDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/workerPoolsDemo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exmaple/writeFileDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/writeFileDemo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/irisDemo/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/conv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/conv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/methodparams.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/methodparams.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/template.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/templatefunc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/templatefunc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/toolbox/statistics.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/toolbox/statistics.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/cmd/commands/generate/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/cmd/commands/generate/generate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_appcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_appcode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_controllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_hproseappcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_hproseappcode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_scaffold.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_scaffold.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/basic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/basic/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/hello-world/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/hello-world/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/web/controllers/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/web/controllers/users_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/middleware/per-method/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/middleware/per-method/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/web/controllers/hello_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/web/controllers/hello_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/websocket/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/websocket/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/routing/macros/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/routing/macros/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers/todo_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers/todo_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/session_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/session_controller.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,7 +52,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/irisDemo/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,7 +79,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/exmaple/timeoutsDemo.go" />
         <option value="$PROJECT_DIR$/src/exmaple/nonBlockChannelOperations.go" />
         <option value="$PROJECT_DIR$/src/exmaple/closingChannels.go" />
         <option value="$PROJECT_DIR$/src/exmaple/rangeOverChannels.go" />
@@ -159,6 +129,7 @@
         <option value="$PROJECT_DIR$/src/quickstart/main.go" />
         <option value="$PROJECT_DIR$/src/quickstart/controllers/default.go" />
         <option value="$PROJECT_DIR$/src/blog/main.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/main.go" />
       </list>
     </option>
   </component>
@@ -174,7 +145,7 @@
       <path value="$PROJECT_DIR$/src/github.com/kataras/iris/_benchmarks/expressjs-throng/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="1420" />
     <option name="height" value="789" />
@@ -187,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,13 +173,24 @@
             </path>
             <path>
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gopath" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="irisDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gopath" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,18 +284,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1420" height="789" extended-state="0" />
+    <frame x="0" y="25" width="1435" height="794" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1640058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1643934" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947975" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32658958" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32568148" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32658958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2803468" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27833572" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,13 +322,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/github.com/beego/bee/vendor/github.com/astaxie/beego/utils/caller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/todo/main.go" />
     <entry file="file://$PROJECT_DIR$/src/todo/conf/app.conf" />
     <entry file="file://$PROJECT_DIR$/src/todo/views/index.tpl" />
@@ -521,9 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#21#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,9 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#14#76#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,9 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#14#70#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -607,10 +575,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/main.go">
+    <entry file="file://$PROJECT_DIR$/src/blog/main.go" />
+    <entry file="file://$PROJECT_DIR$/src/irisDemo/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="54">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
