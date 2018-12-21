@@ -6,30 +6,28 @@ package main
 
 import (
 	"github.com/kataras/iris"
-	"flag"
 	"irisCms/routers"
+	"flag"
 )
 
 func main() {
-	var app = iris.New()
+	app := iris.New()
 
 	//中间件注册
 
 	//路由注册
 	routers.New(app)
-
-
-	//启动配置项
+	//初始化命令行
 	//命令行参数配置
-	var configName = flag.String("configName", "dev", "this is setting application run config")
-	//解析cmd
+	var AppEnvName = flag.String("appEnvName", "dev", "this is set application run env")
 	flag.Parse()
-	if *configName == "dev" {
+	if *AppEnvName == "dev" {
 		app.Run(
 			iris.Addr("127.0.0.1:8080"),
-			iris.WithConfiguration(iris.YAML("./configs/pro.yml")),
+			iris.WithConfiguration(iris.YAML("./configs/dev.yml")),
 		)
-	} else if *configName == "pro" {
+		//fmt.Println(app.ConfigurationReadOnly().GetFireMethodNotAllowed())
+	} else if *AppEnvName == "pro" {
 		app.Run(
 			iris.Addr("127.0.0.1:8080"),
 			iris.WithConfiguration(iris.YAML("./configs/pro.yml")),
