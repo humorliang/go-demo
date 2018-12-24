@@ -9,24 +9,23 @@ import (
 )
 
 type DbInfo struct {
-	url string `json:"url"`
-	port int `json:"port"`
+	url      string `json:"url"`
+	port     int    `json:"port"`
 	username string `json:"username"`
 	password string `json:"password"`
-	charset string	`json:"charset"`
+	charset  string `json:"charset"`
 }
 
-func DbConfigRead(path string,file string) *DbInfo {
-	if utils.CheckFileDirIsNotExits(path+file){
-		f,err:=os.OpenFile(path+file,os.O_RDONLY,0666)
-		if err!=nil{
+func DbConfigRead(path string, file string) *DbInfo {
+	if utils.CheckFileDirIsNotExits(path + file) {
+		db := &DbInfo{}
+		f, err := os.OpenFile(path+file, os.O_RDONLY, 0666)
+		if err != nil {
 			log.Fatal("配置文件不存在")
 		}
-		err:=yaml.Unmarshal(ioutil.ReadAll(f))
-		return &{
-
-		}
-	}else {
+		err := yaml.Unmarshal(ioutil.ReadAll(f))
+		return db
+	} else {
 		log.Fatal("配置文件不存在！")
 	}
 

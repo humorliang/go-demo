@@ -9,22 +9,10 @@ import (
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/middleware/logger"
 	"irisCms/utils"
-	"log"
 )
 
 //日志文件目录
-const (
-	requestLogDir = "./data/log/request/"
-	errorLogDir   = "./data/log/error/"
-	infoLogDir    = "./data/log/info/"
-	debugLogDir   = "./data/log/debug/"
-)
-
-//获取当天的日志文件名
-//@return string
-func todayFileName() (fileName string) {
-	return strings.Split(time.Now().String(), " ")[0] + ".log"
-}
+const requestLogDir = "./data/log/request/"
 
 //获取一个http请求的logger，不能代替全局的log
 func NewRequestLogger() (h iris.Handler) {
@@ -49,7 +37,7 @@ func NewRequestLogger() (h iris.Handler) {
 		//组装信息
 		output := logger.Columnize(now.String(), latency, status, ip, method, path, message, headerMessage)
 		//写入数据
-		_, err := utils.CreateAppendWriteFile(requestLogDir, todayFileName(), []byte(output))
+		_, err := utils.CreateAppendWriteFile(requestLogDir, utils.TodayFileName(), []byte(output))
 		if err != nil {
 
 		}
@@ -67,31 +55,7 @@ func NewRequestLogger() (h iris.Handler) {
 		}
 		return false
 	})
-}
-
-func NewLogger(prefix string) (l *log.Logger) {
-
-	switch prefix {
-	case "debug":
-		f, err := utils.CreateAppendWriteFile(debugLogDir, todayFileName(), nil)
-		if err != nil {
-			log.Panic("debug log file fail!")
-		}
-		l = log.New(f,"[debug]",log.Llongfile)
-		return
-	case "error":
-		f, err := utils.CreateAppendWriteFile(errorLogDir, todayFileName(), nil)
-		if err != nil {
-			log.Panic("error log file fail!")
-		}
-		l = log.New(f,"[error]",log.Llongfile)
-		return
-	case "info":
-		f, err := utils.CreateAppendWriteFile(infoLogDir, todayFileName(), nil)
-		if err != nil {
-			log.Panic("info log file fail!")
-		}
-		l = log.New(f,"[info]",log.Llongfile)
-		return
-	}
+	//请求的日志对象
+	h = logger.New(cfg)
+	return
 }

@@ -7,6 +7,8 @@ package utils
 import (
 	"log"
 	"os"
+	"strings"
+	"time"
 )
 
 //写入文件
@@ -72,4 +74,10 @@ func CheckFileDirIsNotExits(pathOrFileName string) bool {
 		}
 	}
 	return true
+}
+
+//获取当天的日志文件名
+//@return string
+func TodayFileName() (fileName string) {
+	return strings.Split(time.Now().String(), " ")[0] + ".log"
 }

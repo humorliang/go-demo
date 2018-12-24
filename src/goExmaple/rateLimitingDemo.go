@@ -25,7 +25,7 @@ func main() {
 	for req := range requests {
 		//管理器中读取 进行速率限制 进行阻塞接受
 		<-limiter
-		fmt.Println("request:", req, time.Now())
+		fmt.Println("reqError:", req, time.Now())
 	}
 
 	//进行临时速率限制

@@ -2,47 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d9dd69-0e6c-4cd0-9bfd-aec65e63f6a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/irisDemo/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/kataras/iris.a" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/kataras/iris.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/context.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/conv.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/conv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/methodparams.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/context/param/methodparams.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/template.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/template.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/templatefunc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/templatefunc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego/toolbox/statistics.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego/toolbox/statistics.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/cmd/commands/generate/generate.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/cmd/commands/generate/generate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_appcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_appcode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_controllers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_hproseappcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_hproseappcode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_scaffold.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee/generate/g_scaffold.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/basic/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/basic/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/hello-world/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/hello-world/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/web/controllers/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/login/web/controllers/users_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/middleware/per-method/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/middleware/per-method/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/web/controllers/hello_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/overview/web/controllers/hello_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/websocket/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/mvc/websocket/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/routing/macros/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/routing/macros/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/structuring/login-mvc-single-responsibility-package/user/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server1/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/caddy/server2/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers/todo_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/_examples/tutorial/vuejs-todo-mvc/src/web/controllers/todo_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/core/router/party.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/doc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/func.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/reflect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/di/values.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/hero/handler_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/controller_method_parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/mvc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/session_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris/mvc/session_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/websocket" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/websocket" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/kataras/iris" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/kataras/iris" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/goExmaple/rateLimitingDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/rateLimitingDemo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/irisDemo/utils/requestLogger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/irisDemo/utils/requestLogger.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,12 +19,93 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/irisDemo/main.go">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="122">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+              <folding>
+                <element signature="e#41#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/configuration.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+              <folding>
+                <element signature="e#14#208#0" expanded="true" />
+                <element signature="e#736#1114#0" />
+                <element signature="e#1258#1831#0" />
+                <element signature="e#3682#4929#0" />
+                <element signature="e#6597#6881#0" />
+                <element signature="e#7035#7075#0" />
+                <element signature="e#7434#7480#0" />
+                <element signature="e#7622#7666#0" />
+                <element signature="e#7841#7938#0" />
+                <element signature="e#9684#9758#0" />
+                <element signature="e#10511#10703#0" />
+                <element signature="e#11882#20815#0" />
+                <element signature="e#21186#21205#0" />
+                <element signature="e#21629#21664#0" />
+                <element signature="e#24007#24028#0" />
+                <element signature="e#24383#24410#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cmd.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/commend/cmd.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="15" column="88" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/configs/dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configInfo.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/comm/configInfo.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#14#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/routers/home.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/irisCms/middleware/logger.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+              <folding>
+                <element signature="e#32#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,42 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/exmaple/nonBlockChannelOperations.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/closingChannels.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/rangeOverChannels.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/timersDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/tickersDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/workerPoolsDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/channelsDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/rateLimitingDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/automicCountersDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/mutexesDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/statefulGoroutinesDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/sortingDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/sortindByFuncDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/panicDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/deferDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/collectionFunctionsDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/stringFuncDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/stringFormattingDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/regulerExpressionsDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/jsonDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/timeDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/epochDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/timeParsingFormatting.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/randomNumbers.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/numberparsingDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/urlParsingDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/sha1HashDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/base64EncodingDemo.go" />
-        <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/src/exmaple/readingFilesDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/writeFileDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/lineFiltersDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/commandLineArgumentsDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/CommandLineFlags.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/environmentVariablesDemo.go" />
-        <option value="$PROJECT_DIR$/src/exmaple/spawningProcessesDemo.go" />
         <option value="$PROJECT_DIR$/src/exmaple/execingProcessesDemo.go" />
         <option value="$PROJECT_DIR$/src/exmaple/signalsDemo.go" />
         <option value="$PROJECT_DIR$/src/exmaple/exitDemo.go" />
@@ -129,7 +141,43 @@
         <option value="$PROJECT_DIR$/src/quickstart/main.go" />
         <option value="$PROJECT_DIR$/src/quickstart/controllers/default.go" />
         <option value="$PROJECT_DIR$/src/blog/main.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/conf/dev.yml" />
+        <option value="$PROJECT_DIR$/src/irisDemo/routers/home.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/controllers/home/index.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/utils/setLogger.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/utils/errorLogger.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/routers/home/home.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/app/init.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/controllers/controller.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/utils/requestLogger.go" />
         <option value="$PROJECT_DIR$/src/irisDemo/main.go" />
+        <option value="$PROJECT_DIR$/src/irisDemo/tests/test.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/main/main.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/database/mysql.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/test/utilsTest.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/note.md" />
+        <option value="$PROJECT_DIR$/src/irisCms/middleware/auth.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/routers/user.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/routers/post.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/routers/admin.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/controllers/admin.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/controllers/object.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/database/repositories.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/routers/object.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/test/main.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/configs/setting.ini" />
+        <option value="$PROJECT_DIR$/src/irisCms/utils/file.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/commen/logger.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/middleware/logger.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/comm/log.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/controllers/home.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/comm/setInfo.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/commend/cmd.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/configs/dev.yml" />
+        <option value="$PROJECT_DIR$/src/github.com/kataras/iris/configuration.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/routers/home.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/main.go" />
+        <option value="$PROJECT_DIR$/src/irisCms/comm/configInfo.go" />
       </list>
     </option>
   </component>
@@ -145,10 +193,10 @@
       <path value="$PROJECT_DIR$/src/github.com/kataras/iris/_benchmarks/expressjs-throng/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1420" />
-    <option name="height" value="789" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -175,17 +223,23 @@
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopath" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="irisDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="irisCms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopath" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="irisCms" type="462c0819:PsiDirectoryNode" />
+              <item name="comm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -204,6 +258,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/irisDemo/routers/home" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -216,13 +275,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build helloServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/webSever/demo01/helloServer.go" />
+      <filePath value="$PROJECT_DIR$/src/irisDemo/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/irisCms/test/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -230,47 +297,39 @@
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/quickstart/main.go" />
+      <filePath value="$PROJECT_DIR$/src/irisCms/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build secoketServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/webSever/webSocketDemo/secoketServer.go" />
+      <filePath value="$PROJECT_DIR$/src/irisDemo/tests/test.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build wsClient.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build utilsTest.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/webSever/demo2/wsClient.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
-    <configuration name="go build wsServer.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/webSever/demo2/wsServer.go" />
+      <filePath value="$PROJECT_DIR$/src/irisCms/test/utilsTest.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build helloServer.go" />
-      <item itemvalue="Go Build.go build secoketServer.go" />
-      <item itemvalue="Go Build.go build wsClient.go" />
-      <item itemvalue="Go Build.go build wsServer.go" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build test.go" />
+      <item itemvalue="Go Build.go build utilsTest.go" />
       <item itemvalue="Go Build.go build main.go" />
+      <item itemvalue="Go Build.go build main.go (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build wsClient.go" />
-        <item itemvalue="Go Build.go build wsServer.go" />
-        <item itemvalue="Go Build.go build secoketServer.go" />
-        <item itemvalue="Go Build.go build helloServer.go" />
+        <item itemvalue="Go Build.go build utilsTest.go" />
+        <item itemvalue="Go Build.go build test.go" />
+        <item itemvalue="Go Build.go build main.go (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -284,21 +343,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1435" height="794" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1643934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32947975" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32568148" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32428572" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32658958" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3257143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27833572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27714285" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Thumbnails" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,6 +371,7 @@
     <option name="version" value="1" />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.tpl" />
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -318,268 +379,371 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/todo/main.go" />
-    <entry file="file://$PROJECT_DIR$/src/todo/conf/app.conf" />
-    <entry file="file://$PROJECT_DIR$/src/todo/views/index.tpl" />
-    <entry file="file://$PROJECT_DIR$/src/todo/controllers/default.go" />
-    <entry file="file://$PROJECT_DIR$/src/todo/routers/router.go" />
-    <entry file="file://$PROJECT_DIR$/src/todo/static/js/reload.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/apiproject/controllers/user.go" />
-    <entry file="file://$PROJECT_DIR$/src/apiproject/controllers/object.go" />
-    <entry file="file:///usr/local/go/src/crypto/tls/common.go">
+    <entry file="file://$PROJECT_DIR$/src/irisDemo/app/init.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="343" column="5" selection-start-line="343" selection-start-column="5" selection-end-line="343" selection-end-column="5" />
+        <state relative-caret-position="810">
+          <caret line="51" column="14" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/crypto/tls/auth_test.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/context/context.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1451" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/crypto/tls/auth.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="12762">
+          <caret line="740" column="4" selection-start-line="740" selection-start-column="4" selection-end-line="740" selection-end-column="4" />
+          <folding>
+            <element signature="e#47494#48701#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
+    <entry file="file://$PROJECT_DIR$/src/irisDemo/tests/test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="2455" column="17" selection-start-line="2455" selection-start-column="17" selection-end-line="2455" selection-end-column="17" />
+        <state relative-caret-position="126">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/net/http/request.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/main/main.go" />
+    <entry file="file:///usr/local/go/src/flag/flag.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21294">
-          <caret line="1204" column="13" selection-start-line="1204" selection-start-column="13" selection-end-line="1204" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webSever/demo01/helloServer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/gorilla/websocket/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webSever/webSocketDemo/secoketServer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="66" column="12" lean-forward="true" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="2633">
+          <caret line="950" column="5" selection-start-line="950" selection-start-column="5" selection-end-line="950" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/io/ioutil/ioutil.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        <state relative-caret-position="218">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/io/io.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="288" column="5" selection-start-line="288" selection-start-column="5" selection-end-line="288" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/test/utilsTest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="101" selection-start-line="5" selection-start-column="101" selection-end-line="5" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/go/src/internal/testlog/log.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="283" column="42" lean-forward="true" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/stat.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/os/error.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="74" column="15" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/configs/pro" />
+    <entry file="file://$PROJECT_DIR$/src/irisCms/configs/pro.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/note.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisDemo/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="16" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/middleware/auth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/routers/user.go" />
+    <entry file="file://$PROJECT_DIR$/src/irisCms/routers/post.go" />
+    <entry file="file://$PROJECT_DIR$/src/irisCms/routers/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/controllers/admin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/database/repositories.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/time/time.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5410">
+          <caret line="490" column="16" lean-forward="true" selection-start-line="490" selection-start-column="16" selection-end-line="490" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/time/format.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="785" column="5" selection-start-line="785" selection-start-column="5" selection-end-line="785" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/test/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#14#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/vendor/github.com/ryanuber/columnize/columnize.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/controllers/object.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/routers/object.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/core/router/api_builder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="474" column="23" selection-start-line="474" selection-start-column="23" selection-end-line="474" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!block;n#DefaultConfig#0" />
+            <element signature="n#!!block;n#buildSkipper#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/middleware/logger/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1352">
+          <caret line="34" column="65" lean-forward="true" selection-start-line="34" selection-start-column="65" selection-end-line="34" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/configs/setting.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisDemo/utils/requestLogger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="104" column="16" lean-forward="true" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/commen/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/utils/file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#27#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/local/go/src/log/log.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="129">
+          <caret line="148" column="21" lean-forward="true" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/go/src/flag/flag.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="706" column="18" selection-start-line="706" selection-start-column="18" selection-end-line="706" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/os/signal/signal.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/url/url.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="97" column="2" lean-forward="true" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/gorilla/websocket/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="132" column="1" lean-forward="true" selection-start-line="132" selection-start-column="1" selection-end-line="132" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/builtin/builtin.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-440">
-          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/time/tick.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apiproject/main.go" />
-    <entry file="file://$PROJECT_DIR$/src/apiproject/conf/app.conf" />
-    <entry file="file://$PROJECT_DIR$/src/webSever/demo2/wsClient.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/gorilla/websocket/conn.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="256" selection-start-line="256" selection-end-line="256" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/webSever/demo2/wsServer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/controllers/user.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/static/js/reload.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/conf/app.conf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/views/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1902" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/controller.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7832">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/tests/default_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/controllers/default.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/comm/log.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/config.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/middleware/logger.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+          <folding>
+            <element signature="e#32#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/comm/setInfo.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/controllers/object.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/vendor/gopkg.in/yaml.v2/yaml.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="-44">
+          <caret line="136" column="5" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/beego.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/main.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/controllers/home.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#21#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/quickstart/routers/router.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/commend/cmd.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="147">
+          <caret line="15" column="88" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/main.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/context/configuration.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="-1310">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/tests/default_test.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/routers/router.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/routers/home.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/models/object.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cms/models/user.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/iris.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/app.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        <state relative-caret-position="-3182">
+          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/router.go">
+    <entry file="file://$PROJECT_DIR$/src/irisCms/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        <state relative-caret-position="122">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding>
+            <element signature="e#41#105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/blog/main.go" />
-    <entry file="file://$PROJECT_DIR$/src/irisDemo/main.go">
+    <entry file="file://$PROJECT_DIR$/src/github.com/kataras/iris/configuration.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        <state relative-caret-position="117">
+          <caret line="165" column="28" lean-forward="true" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
+          <folding>
+            <element signature="e#14#208#0" expanded="true" />
+            <element signature="e#736#1114#0" />
+            <element signature="e#1258#1831#0" />
+            <element signature="e#3682#4929#0" />
+            <element signature="e#6597#6881#0" />
+            <element signature="e#7035#7075#0" />
+            <element signature="e#7434#7480#0" />
+            <element signature="e#7622#7666#0" />
+            <element signature="e#7841#7938#0" />
+            <element signature="e#9684#9758#0" />
+            <element signature="e#10511#10703#0" />
+            <element signature="e#11882#20815#0" />
+            <element signature="e#21186#21205#0" />
+            <element signature="e#21629#21664#0" />
+            <element signature="e#24007#24028#0" />
+            <element signature="e#24383#24410#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/configs/dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/irisCms/comm/configInfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#14#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

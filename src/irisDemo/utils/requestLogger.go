@@ -74,7 +74,7 @@ func NewRequestLogger() (h iris.Handler, close func() error) {
 		return nil
 	}
 
-	//fmt.Println("logger new request 1........")
+	//fmt.Println("logger new reqError 1........")
 	//log内容格式函数
 	cfg.LogFunc = func(now time.Time, latency time.Duration, status, ip, method, path string, message interface{}, headerMessage interface{}) {
 		nowStr := strings.Split(now.String(), " ")
@@ -85,7 +85,7 @@ func NewRequestLogger() (h iris.Handler, close func() error) {
 		//fmt.Println(now)
 		newLogWriteFile([]byte(output))
 	}
-	//fmt.Println("logger new request 2........")
+	//fmt.Println("logger new reqError 2........")
 
 	//添加跳过的日志的路由
 	cfg.AddSkipper(func(ctx iris.Context) bool {
@@ -100,7 +100,7 @@ func NewRequestLogger() (h iris.Handler, close func() error) {
 		}
 		return false
 	})
-	fmt.Println("logger new request........")
+	fmt.Println("logger new reqError........")
 	//日志中间件配置
 	h = logger.New(cfg)
 	return
