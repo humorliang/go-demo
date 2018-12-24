@@ -16,9 +16,9 @@ func main() {
 	//cur,_:=time.Parse("2018-10-19",time.Now().String())
 	//fmt.Println(cur)
 	//fmt.Println(strings.Split(time.Now().String(), " ")[0] + ".log")
-	utils.CreateAppendWriteFile("./dataTest/","test.txt",[]byte("hello world\n"))
-
-
+	//utils.CreateAppendWriteFile("./dataTest/","test.txt",[]byte("hello world\n"))
+	//fmt.Println(comm.DbConfigRead("./configs/", "dev.yml"))
+	utils.CreateAppendWriteFile("./data/log/info/", utils.TodayFileName(), nil)
 }
 
 //创建一个新的日志文件
