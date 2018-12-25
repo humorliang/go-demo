@@ -9,6 +9,7 @@ import (
 	"os"
 	"strings"
 	"time"
+	"fmt"
 )
 
 //写入文件
@@ -39,11 +40,16 @@ func CreateAppendWriteFile(path string, filename string, content []byte) (*os.Fi
 	//	}
 	//}
 	//--------------- 方法二 -----------------
+	//fmt.Println("开始判断文件夹")
 	//判断文件夹是否存在
 	if !CheckFileDirIsNotExits(path) {
-		err := os.Mkdir(path, os.ModePerm)
+		//fmt.Println("开始创建文件夹")
+		//Mkdir 创建单个文件夹
+		//MkdirAll 创建多个文件夹
+		err := os.MkdirAll(path, os.ModePerm)
 		if err != nil {
 			//log.Fatal(err) 出错直接调用系统接口os.exit(1)直接退出不会执行defer
+			fmt.Println("创建文件夹失败！")
 			log.Panic(err) //志内容刷到标准错误后调用 panic 函数
 		}else {
 			//fmt.Println("创建成功")
@@ -64,7 +70,7 @@ func CreateAppendWriteFile(path string, filename string, content []byte) (*os.Fi
 //检查文件或文件夹是否存在
 //@return bool
 func CheckFileDirIsNotExits(pathOrFileName string) bool {
-	// 文件不存在则返回error
+	// 文件或文件夹不存在则返回error
 	_, err := os.Stat(pathOrFileName)
 	if err != nil {
 		if os.IsNotExist(err) {

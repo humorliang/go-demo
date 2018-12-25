@@ -8,12 +8,18 @@ import (
 	"github.com/kataras/iris"
 	"irisCms/routers"
 	"flag"
+	"irisCms/middleware"
+	recover2 "github.com/kataras/iris/middleware/recover"
 )
 
 func main() {
 	app := iris.New()
 
 	//中间件注册
+	app.Use(middleware.NewRequestLogger())
+	//异常恢复
+	app.Use(recover2.New())
+
 
 	//路由注册
 	routers.New(app)

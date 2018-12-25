@@ -9,6 +9,7 @@ import (
 	"github.com/kataras/iris"
 	"github.com/kataras/iris/middleware/logger"
 	"irisCms/utils"
+	"irisCms/comm"
 )
 
 //日志文件目录
@@ -39,7 +40,7 @@ func NewRequestLogger() (h iris.Handler) {
 		//写入数据
 		_, err := utils.CreateAppendWriteFile(requestLogDir, utils.TodayFileName(), []byte(output))
 		if err != nil {
-
+			comm.NewLogger("error","请求日志创建失败！")
 		}
 	}
 	//跳过静态资源的请求
