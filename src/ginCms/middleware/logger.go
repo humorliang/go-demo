@@ -41,11 +41,17 @@ func Logger() gin.HandlerFunc {
 	}
 
 	return func(ctx *gin.Context) {
+		var path string
 		// Start timer
 		start := time.Now()
-		path := ctx.Request.URL.Path
+		urlPath := ctx.Request.URL.Path
 		raw := ctx.Request.URL.RawQuery
 
+		if raw != "" {
+			path = urlPath + raw
+		} else {
+			path = urlPath
+		}
 		// Process request
 		ctx.Next()
 
@@ -53,8 +59,8 @@ func Logger() gin.HandlerFunc {
 		for _, ext := range excludeExtensions {
 			//如果有后缀直接跳过
 			if strings.HasSuffix(path, ext) {
-
-			}else {
+				//
+			} else {
 
 			}
 		}
