@@ -8,5 +8,5 @@ import (
 //初始化路由映射函数
 func InitRouter(router *gin.Engine) {
 	//传入handleFunc
-	router.GET("/test", controllers.Index)
+	router.GET("/", controllers.Index)
 }
