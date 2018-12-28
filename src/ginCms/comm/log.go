@@ -9,6 +9,7 @@ const (
 	debugDir = "../../data/log/debug"
 	infoDir  = "../../data/log/info"
 	errorDir = "../../data/log/error"
+	requestDir="../../data/log/request"
 )
 
 //全局的Log对象
@@ -26,6 +27,8 @@ func Log(prefix string) (l *log.Logger) {
 		filePath = infoDir + "/" + todayFileName
 	case "error":
 		filePath = errorDir + "/" + todayFileName
+	case "request":
+		filePath = requestDir + "/" + todayFileName
 	}
 	l = log.New(utils.OpenFile(filePath), "["+prefix+"]", log.Llongfile|log.Ldate|log.Ltime)
 	return l
