@@ -86,7 +86,7 @@ func Logger() gin.HandlerFunc {
 			param.StatusCode = ctx.Writer.Status()
 			param.ErrorMessage = ctx.Errors.ByType(gin.ErrorTypePrivate).String()
 			//写入到请求日志
-			reqInfo := fmt.Sprintf("[StartTime] %v [IP] %s [Path] %s [Method] %s [LtcyTime] %v [StatusCode] %d [ErrorINfo] %s\n",
+			reqInfo := fmt.Sprintf("[StartTime] %v [IP] %s [Path] %s [Method] %s [LtcyTime] %v [StatusCode] %d [ErrorInfo] %s\n",
 				start.Format("2006/01/02 - 15:04:05"), param.ClientIP,
 				path, param.Method, param.Latency, param.StatusCode, param.ErrorMessage)
 			//日志文件路径

@@ -13,6 +13,8 @@ func init() {
 }
 
 func main() {
+	//设置运行模式
+	//gin.SetMode(gin.ReleaseMode)
 
 	//基础路由(不包含任何中间件的路由)
 	router := gin.New()
@@ -26,7 +28,6 @@ func main() {
 	//路由初始化
 	routers.InitRouter(router)
 
-	//设置运行模式
-	//gin.SetMode(gin.ReleaseMode)
+	//运行
 	router.Run()
 }
