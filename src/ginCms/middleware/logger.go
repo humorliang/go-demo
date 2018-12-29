@@ -45,7 +45,6 @@ func Logger() gin.HandlerFunc {
 		".ico",
 		".svg",
 	}
-
 	return func(ctx *gin.Context) {
 		var path string
 		var rqFilePath string
@@ -62,41 +61,48 @@ func Logger() gin.HandlerFunc {
 		// Process request
 		ctx.Next()
 
-		//请求
-		param := LogFormatterParams{
-			Request: ctx.Request,
-		}
-		//遍历跳过扩展
-		for _, ext := range excludeExtensions {
-			//如果有后缀直接跳过
-			if strings.HasSuffix(path, ext) {
-				//...
-				param.IsSkipPath = true
-			} else {
-				// Stop timer
-				param.IsSkipPath = false
+		//复制一个新的请求
+		var newCtx = ctx.Copy()
+
+		//开启一个go程处理
+		go func() {
+			//请求
+			param := LogFormatterParams{
+				Request: newCtx.Request,
 			}
-		}
-		if param.IsSkipPath {
-			//...
-		} else {
-			param.Latency = time.Now().Sub(start)
-			param.ClientIP = ctx.ClientIP()
-			param.Method = ctx.Request.Method
-			param.StatusCode = ctx.Writer.Status()
-			param.ErrorMessage = ctx.Errors.ByType(gin.ErrorTypePrivate).String()
-			//写入到请求日志
-			reqInfo := fmt.Sprintf("[StartTime] %v [IP] %s [Path] %s [Method] %s [LtcyTime] %v [StatusCode] %d [ErrorInfo] %s\n",
-				start.Format("2006/01/02 - 15:04:05"), param.ClientIP,
-				path, param.Method, param.Latency, param.StatusCode, param.ErrorMessage)
-			//日志文件路径
-			rqFilePath = requestDir + "/" + utils.TodayFileName()
-			//打开日志文件
-			f := utils.OpenFile(rqFilePath)
-			//写入日志文件
-			f.WriteString(reqInfo)
-			//fmt.Println("request log")
-		}
+			//遍历跳过扩展
+			for _, ext := range excludeExtensions {
+				//如果有后缀直接跳过
+				if strings.HasSuffix(path, ext) {
+					//...
+					param.IsSkipPath = true
+				} else {
+					// Stop timer
+					param.IsSkipPath = false
+				}
+			}
+			if param.IsSkipPath {
+				//...
+			} else {
+				param.Latency = time.Now().Sub(start)
+				param.ClientIP = newCtx.ClientIP()
+				param.Method = newCtx.Request.Method
+				param.StatusCode = newCtx.Writer.Status()
+				param.ErrorMessage = newCtx.Errors.ByType(gin.ErrorTypePrivate).String()
+				//写入到请求日志
+				reqInfo := fmt.Sprintf("[StartTime] %v [IP] %s [Path] %s [Method] %s [LtcyTime] %v [StatusCode] %d [ErrorInfo] %s\n",
+					start.Format("2006/01/02 - 15:04:05"), param.ClientIP,
+					path, param.Method, param.Latency, param.StatusCode, param.ErrorMessage)
+				//日志文件路径
+				rqFilePath = requestDir + "/" + utils.TodayFileName()
+				//打开日志文件
+				f := utils.OpenFile(rqFilePath)
+				//写入日志文件
+				f.WriteString(reqInfo)
+				//fmt.Println("request log")
+			}
+
+		}()
 
 	}
 }

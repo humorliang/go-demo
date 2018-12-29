@@ -6,25 +6,54 @@ import (
 	"ginCms/comm"
 )
 
-var DbCon *sql.DB
+var Con *sql.DB
 
 func init() {
 	var err error
-	//open会自动创建一个数据库连接池，只有在query,exce才会去连接
+	//open会自动创建一个数据库连接池，只有在query,exce才会去连接，是一个惰性连接
+	//
 	//username:password@protocol(address)/dbname?param=value
-	DbCon, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/android_app?charset=utf8")
-	if err != nil {
-		//fmt.Println(err)
-		comm.Log("error").Fatal("数据库连接池错误：", err)
-	}
-
-	//不能够打开一个连接
-	err = DbCon.Ping()
+	Con, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/blog_cms?charset=utf8")
 	if err != nil {
 		//fmt.Println(err)
 		comm.Log("error").Fatal("数据库连接错误：", err)
 	}
+
+	//不能够打开一个连接
+	err = Con.Ping()
+	if err != nil {
+		//fmt.Println(err)
+		comm.Log("error").Fatal("数据库连接测试错误：", err)
+	}
 }
+
+
+//通过用户名进行数据库查询是否存在
+func IsQueryUserByUserName(username string, con *sql.DB) (h bool, err error) {
+	//打开数据库
+	rows, err := con.Query("SELECT id FROM user WHERE user_name = ?", username)
+	if err != nil {
+		comm.Log("error").Println("用户名查询错误：", err)
+	}
+	//释放链接
+	defer rows.Close()
+	//查询字段解析
+	var id int64
+	//var idContain []int64
+	for rows.Next() {
+		err = rows.Scan(&id)
+		//idContain = append(idContain, id)
+		if err != nil {
+			comm.Log("error").Println("用户名查询数据解析错误：", err)
+		}
+	}
+	if id == 0 {
+		return false, err
+	} else {
+		return true, err
+	}
+}
+
 
 //func main()  {
 //	//关闭连接当函数结束时

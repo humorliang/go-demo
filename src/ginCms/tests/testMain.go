@@ -1,10 +1,5 @@
 package main
 
-import (
-	"ginCms/db"
-	"fmt"
-)
-
 func main() {
 	//comm.Log()
 	//log.Print("test")
@@ -45,16 +40,16 @@ func main() {
 	//	userSlice = append(userSlice, user)
 	//}
 	//fmt.Println(userSlice[0].username)
-	dbcon := db.DbCon
-	rows, err := dbcon.Query("SELECT id FROM user WHERE username = ?", "张三")
-	if err != nil {
-		fmt.Println(err)
-	}
-	var id int64
-	for rows.Next(){
-		if err := rows.Scan(&id); err != nil {
-			fmt.Println(err)
-		}
-	}
-	fmt.Println(id)
+	//dbcon := db.DbCon
+	//rows, err := dbcon.Query("SELECT id FROM user WHERE user_name = ?", "张三")
+	//if err != nil {
+	//	fmt.Println(err)
+	//}
+	//var id int64
+	//for rows.Next(){
+	//	if err := rows.Scan(&id); err != nil {
+	//		fmt.Println(err)
+	//	}
+	//}
+	//fmt.Println(id)
 }

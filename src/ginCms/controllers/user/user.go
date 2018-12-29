@@ -2,83 +2,117 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"ginCms/db"
+	"ginCms/comm"
+	"ginCms/controllers"
 	"fmt"
+	"ginCms/utils"
 )
 
+//用户类
+type User struct {
+	Id       int    `json:"id"`
+	Username string `json:"username",form:"username"`
+	Password string `json:"password",form:"password"`
+	PenName  string `json:"pen_name",form:"pen_name"`
+	Email    string `json:"email",form:"email"`
+}
+
 //登录控制函数
-func Login(ctx *gin.Context) {
+func Login(c *gin.Context) {
+	//context类型定义
+	ctx := controllers.Context{c}
 	//获取表单信息
 	username := ctx.PostForm("username")
 	password := ctx.PostForm("password")
-	//打开表单信息
-	//db := db2.DbCon
 	//判断用户名和密码
-	if username == "test" && password == "123" {
-		ctx.JSON(http.StatusOK, gin.H{
-			"code": 0,
-			"msg":  "success",
-			"data": "登陆成功！",
-		})
+	if h, err := db.IsQueryUserByUserName(username, db.Con); h {
+		//查询异常判断
+		if err != nil {
+			comm.Log("error").Println(err)
+			ctx.Fail(500, 10002, "数据查询失败！")
+		} else {
+			//数据库结构解析
+			var user User
+			var userAll []User
+			//查询数据没有
+			//如果没有结果会返回error
+			//err := db.Con.QueryRow("SELECT id,user_name,pen_name,email FROM user WHERE user_name=? AND pass_word=?", username, password)
+			rows, err := db.Con.Query("SELECT id,user_name,pen_name,email FROM user WHERE user_name=? AND pass_word=?", username, utils.Md5Encrypt(password))
+			//查询异常判断
+			if err != nil {
+				comm.Log("error").Println(err)
+				ctx.Fail(500, 10002, "数据查询失败！")
+			} else {
+				//fmt.Println("2")
+				//fmt.Println(rows)
+				//查询结果遍历
+				for rows.Next() {
+					fmt.Println("3")
+					err := rows.Scan(&user.Id, &user.Username, &user.PenName, &user.Email)
+					if err != nil {
+						comm.Log("error").Println(err)
+						ctx.Fail(500, 10002, "数据查询失败！")
+					} else {
+						userAll = append(userAll, user)
+					}
+				}
+
+			}
+			//对查询数据进行判断
+			if len(userAll) == 0 {
+				ctx.Fail(401, 10002, "密码错误！")
+			} else {
+				ctx.Success(gin.H{
+					"userId":   userAll[0].Id,
+					"userName": userAll[0].Username,
+					"pen_name": userAll[0].PenName,
+					"email":    userAll[0].Email,
+				})
+			}
+		}
 	} else {
-		ctx.JSON(http.StatusOK, gin.H{
-			"code": 10000,
-			"msg":  "账号或密码不正确！",
-			"data": "",
-		})
+		ctx.Fail(400, 40001, "用户名不存在！")
 	}
 }
 
 //注册控制函数
-func Register(ctx *gin.Context) {
+func Register(c *gin.Context) {
+	//context类型定义
+	ctx := controllers.Context{c}
+
 	//获取注册表单信息
 	username := ctx.PostForm("username")
 	penname := ctx.PostForm("penName")
-	pwd := ctx.PostForm("password")
+	password := ctx.PostForm("password")
 	email := ctx.PostForm("email")
-	fmt.Println(penname, pwd, email)
-	if b, err := isQueryUserByUserName(username); err != nil {
-		ctx.JSON(http.StatusBadRequest, gin.H{
-			"code": "400003",
-			"msg":  "数据库操作有误",
-			"data": "",
-		})
+
+	//用户判断
+	if b, err := db.IsQueryUserByUserName(username, db.Con); err != nil {
+		comm.Log("error").Println(err)
+		ctx.Fail(500, 10002, "数据查询有误")
 	} else {
 		if b {
-			ctx.JSON(http.StatusOK, gin.H{
-				"code": 1,
-				"msg":  "fails",
-				"data": "用户名已纯在！",
-			})
+			ctx.Fail(400, 40001, "用户名已存在")
 		} else {
-			dbcon:=db.DbCon
-			dbcon.Exec("INSERT INTO user(id,username,p)")
-			ctx.JSON(http.StatusOK, gin.H{
-				"code": 0,
-				"msg":  "success",
-				"data": "注册成功！",
-			})
+			//执行一次命令不返回任何结果
+			//Exec可以直接处理完自动释放到sql连接池
+			re, err := db.Con.Exec("INSERT INTO user(user_name,pen_name,pass_word,email) VALUES(?,?,?,?)", username, penname, utils.Md5Encrypt(password), email)
+			if err != nil {
+				comm.Log("error").Println("注册信息插入有误：", err)
+				ctx.Fail(500, 10005, "数据写入失败！")
+			} else {
+				//返回插入的ID
+				id, err := re.LastInsertId()
+				if err != nil {
+					comm.Log("error").Println("注册成功返回Id错误：", err)
+				}
+				ctx.Success(gin.H{
+					"userId": id,
+				})
+			}
 		}
-
-	}
-
-}
-
-func isQueryUserByUserName(username string) (h bool, err error) {
-	//打开数据库
-	dbcon := db.DbCon
-	rows, err := dbcon.Query("SELECT id FROM user WHERE username = ?", username)
-	//查询字段解析
-	var id int64
-	//var idContain []int64
-	for rows.Next() {
-		err = rows.Scan(&id)
-		//idContain = append(idContain, id)
-	}
-	if id == 0 {
-		return false, err
-	} else {
-		return true, err
 	}
 }
+
+//
