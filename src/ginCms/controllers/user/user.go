@@ -63,6 +63,8 @@ func Login(c *gin.Context) {
 			if len(userAll) == 0 {
 				ctx.Fail(401, 10002, "密码错误！")
 			} else {
+
+
 				ctx.Success(gin.H{
 					"userId":   userAll[0].Id,
 					"userName": userAll[0].Username,
@@ -115,4 +117,4 @@ func Register(c *gin.Context) {
 	}
 }
 
-//
+
