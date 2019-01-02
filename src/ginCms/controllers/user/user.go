@@ -44,8 +44,6 @@ func Login(c *gin.Context) {
 				comm.Log("error").Println(err)
 				ctx.Fail(500, 10002, "数据查询失败！")
 			} else {
-				//fmt.Println("2")
-				//fmt.Println(rows)
 				//查询结果遍历
 				for rows.Next() {
 					fmt.Println("3")
@@ -63,14 +61,22 @@ func Login(c *gin.Context) {
 			if len(userAll) == 0 {
 				ctx.Fail(401, 10002, "密码错误！")
 			} else {
-
-
-				ctx.Success(gin.H{
-					"userId":   userAll[0].Id,
-					"userName": userAll[0].Username,
-					"pen_name": userAll[0].PenName,
-					"email":    userAll[0].Email,
-				})
+				//token claims项
+				mClaims := map[string]int{"userId": userAll[0].Id,}
+				//创建token
+				token, err := utils.CreateToken(utils.JwtSecret, mClaims)
+				if err != nil {
+					comm.Log("error").Println(err)
+					ctx.Fail(500, "50001", "获取Token失败！")
+				} else {
+					ctx.Success(gin.H{
+						"userId":   userAll[0].Id,
+						"userName": userAll[0].Username,
+						"pen_name": userAll[0].PenName,
+						"email":    userAll[0].Email,
+						"token":    token,
+					})
+				}
 			}
 		}
 	} else {
@@ -116,5 +122,3 @@ func Register(c *gin.Context) {
 		}
 	}
 }
-
-
