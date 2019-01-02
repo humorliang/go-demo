@@ -10,7 +10,7 @@ import (
 
 var Con *sql.DB
 
-func init() {
+func Setup() {
 	var err error
 	//open会自动创建一个数据库连接池，只有在query,exce才会去连接，是一个惰性连接
 	//
@@ -20,6 +20,7 @@ func init() {
 		setting.DatabaseSetting.Password,
 		setting.DatabaseSetting.Host,
 		setting.DatabaseSetting.Name)
+	fmt.Println(dataSource)
 	Con, err = sql.Open("mysql", dataSource)
 	if err != nil {
 		//fmt.Println(err)

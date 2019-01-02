@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"ginCms/routers"
 	"ginCms/middleware"
 	"flag"
 	"ginCms/comm/setting"
-	"fmt"
+	"ginCms/routers"
+	"ginCms/db"
 )
 
 func main() {
@@ -15,19 +15,20 @@ func main() {
 	flag.Parse()
 
 	//设置运行模式
-	//gin.SetMode(gin.ReleaseMode)
-
 	//命令行需要解指针,读取运行模式
 	if *mode == "pro" {
 		setting.SetUp("pro")
 	} else {
 		setting.SetUp("dev")
 	}
+	//初始化数据库
+	db.Setup()
+
 	//设置模式
 	gin.SetMode(setting.ServerSetting.RunMode)
 
 	//基础路由(不包含任何中间件的路由)
-	router := gin.New()
+	router := routers.SetupRouter()
 
 	//中间件注册
 	//logger中间件
@@ -36,8 +37,6 @@ func main() {
 	router.Use(gin.Recovery())
 
 	//路由初始化
-	routers.InitRouter(router)
 	router.Run()
 
-	fmt.Sprintf("run")
 }

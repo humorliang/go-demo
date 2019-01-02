@@ -7,10 +7,13 @@ import (
 	"ginCms/middleware"
 	"ginCms/controllers/test"
 	"ginCms/controllers/article"
+	"fmt"
 )
 
 //初始化路由映射函数
-func InitRouter(router *gin.Engine) {
+func SetupRouter() *gin.Engine {
+	fmt.Println("router")
+	router := gin.New()
 	//认证路由
 	authRouterGroup := router.Group("/auth", middleware.JWTAuth())
 	//测试认证路由
@@ -34,15 +37,15 @@ func InitRouter(router *gin.Engine) {
 
 	//文章路由
 	//获取分类文章
-	router.GET("post/list/:tagId/:pageNum", article.GetTagArticle)
+	router.GET("/post/list/tag", article.GetTagArticle)
 	//获取推荐文章
-	router.GET("post/list/recom", article.GetRecomArticle)
+	router.GET("/post/list/recom", article.GetRecomArticle)
 	//获取文章详情
-	router.GET("post/:postId", article.GetDescArticle)
+	router.GET("/post", article.GetDescArticle)
 	//添加文章
-	router.POST("post/:userId/:tagId", article.AddArticle)
+	router.POST("/post", article.AddArticle)
 	//删除文章
-	router.POST("post/:postId",article.DeleteArticle)
+	router.DELETE("/post", article.DeleteArticle)
 
-	//
+	return router
 }
