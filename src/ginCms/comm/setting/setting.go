@@ -7,7 +7,7 @@ import (
 )
 
 type App struct {
-
+	PageNum int
 }
 type Server struct {
 	RunMode      string
@@ -23,6 +23,7 @@ type Database struct {
 	Name     string
 }
 
+var AppSetting = &App{}
 var ServerSetting = &Server{}
 var DatabaseSetting = &Database{}
 
@@ -36,6 +37,7 @@ func SetUp(mode string) {
 			log.Fatal("读取配置文件错误")
 		}
 		//分区与结构体映射
+		cfg.Section("app").MapTo(AppSetting)
 		cfg.Section("server").MapTo(ServerSetting)
 		cfg.Section("database").MapTo(DatabaseSetting)
 		ServerSetting.ReadTimeout = ServerSetting.ReadTimeout * time.Second
@@ -46,6 +48,7 @@ func SetUp(mode string) {
 			log.Fatal("读取配置文件错误")
 		}
 		//分区与结构体映射
+		cfg.Section("app").MapTo(AppSetting)
 		cfg.Section("server").MapTo(ServerSetting)
 		cfg.Section("database").MapTo(DatabaseSetting)
 
