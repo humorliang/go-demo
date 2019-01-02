@@ -7,6 +7,7 @@ import (
 	"ginCms/comm/setting"
 	"ginCms/routers"
 	"ginCms/db"
+	"strconv"
 )
 
 func main() {
@@ -37,6 +38,6 @@ func main() {
 	router.Use(gin.Recovery())
 
 	//路由初始化
-	router.Run()
+	router.Run(strconv.Itoa(setting.ServerSetting.HttpPort))
 
 }
