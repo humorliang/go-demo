@@ -1,22 +1,21 @@
 package article
 
-//func Index(ctx *gin.Context) {
-//	var p controllers.PostInfo
-//	//将结构体与json绑定
-//	err := ctx.BindJSON(&p)
-//	//数据json绑定是否成功
-//	if err == nil {
-//		ctx.JSON(http.StatusOK,
-//			gin.H{
-//				"code": "200",
-//				"msg":  "success",
-//				"data": p,
-//			})
-//	} else {
-//		ctx.JSON(http.StatusBadRequest, gin.H{
-//			"code": "40001",
-//			"msg":  "文章数据有误！",
-//			"data": "",
-//		})
-//	}
-//}
+import "github.com/gin-gonic/gin"
+
+
+
+
+//添加文章
+func AddArticle(c *gin.Context) {
+
+}
+
+//修改文章
+func UpdateArticle(c *gin.Context) {
+
+}
+
+//删除文章
+func DeleteArticle(c *gin.Context) {
+
+}

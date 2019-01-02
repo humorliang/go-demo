@@ -7,6 +7,7 @@ import (
 )
 
 type App struct {
+
 }
 type Server struct {
 	RunMode      string
