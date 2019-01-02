@@ -19,5 +19,4 @@ func InitRouter(router *gin.Engine) {
 	authRouterGroup := router.Group("/auth", middleware.JWTAuth())
 	//测试认证路由
 	authRouterGroup.GET("/test", test.ReTest)
-
 }

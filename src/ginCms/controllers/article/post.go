@@ -1,4 +1,4 @@
-package post
+package article
 
 //func Index(ctx *gin.Context) {
 //	var p controllers.PostInfo
