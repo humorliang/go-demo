@@ -7,7 +7,7 @@ import (
 )
 
 type App struct {
-	PageNum int
+	ArticleListItemNum int
 }
 type Server struct {
 	RunMode      string

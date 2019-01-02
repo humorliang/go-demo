@@ -4,6 +4,8 @@ import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql" //mysql数据库连接驱动
 	"ginCms/comm"
+	"fmt"
+	"ginCms/comm/setting"
 )
 
 var Con *sql.DB
@@ -13,7 +15,12 @@ func init() {
 	//open会自动创建一个数据库连接池，只有在query,exce才会去连接，是一个惰性连接
 	//
 	//username:password@protocol(address)/dbname?param=value
-	Con, err = sql.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/blog_cms?charset=utf8")
+	dataSource := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8",
+		setting.DatabaseSetting.User,
+		setting.DatabaseSetting.Password,
+		setting.DatabaseSetting.Host,
+		setting.DatabaseSetting.Name)
+	Con, err = sql.Open("mysql", dataSource)
 	if err != nil {
 		//fmt.Println(err)
 		comm.Log("error").Fatal("数据库连接错误：", err)
@@ -26,7 +33,6 @@ func init() {
 		comm.Log("error").Fatal("数据库连接测试错误：", err)
 	}
 }
-
 
 //通过用户名进行数据库查询是否存在
 func IsQueryUserByUserName(username string, con *sql.DB) (h bool, err error) {
@@ -53,7 +59,6 @@ func IsQueryUserByUserName(username string, con *sql.DB) (h bool, err error) {
 		return true, err
 	}
 }
-
 
 //func main()  {
 //	//关闭连接当函数结束时

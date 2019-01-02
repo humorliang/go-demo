@@ -6,6 +6,7 @@ import (
 	"ginCms/middleware"
 	"flag"
 	"ginCms/comm/setting"
+	"fmt"
 )
 
 func main() {
@@ -37,4 +38,6 @@ func main() {
 	//路由初始化
 	routers.InitRouter(router)
 	router.Run()
+
+	fmt.Sprintf("run")
 }
