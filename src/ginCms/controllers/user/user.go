@@ -5,7 +5,6 @@ import (
 	"ginCms/db"
 	"ginCms/comm"
 	"ginCms/controllers"
-	"fmt"
 	"ginCms/utils"
 )
 
@@ -46,7 +45,7 @@ func Login(c *gin.Context) {
 			} else {
 				//查询结果遍历
 				for rows.Next() {
-					fmt.Println("3")
+					//fmt.Println("3")
 					err := rows.Scan(&user.Id, &user.Username, &user.PenName, &user.Email)
 					if err != nil {
 						comm.Log("error").Println(err)

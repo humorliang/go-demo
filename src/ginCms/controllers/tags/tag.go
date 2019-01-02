@@ -7,14 +7,32 @@ import (
 )
 
 type Tag struct {
+	Id      int64  `json:"id"`
 	TagName string `json:"tag_name"`
 }
 
 //获取分类
 func GetTags(c *gin.Context) {
 	ctx := controllers.Context{c}
-
-	ctx.Success("成功")
+	var tag Tag
+	var tags []Tag
+	//数据查询
+	rows, err := db.Con.Query("SELECT id,tag_name FROM tag")
+	if err != nil {
+		ctx.Fail(500, "10001", "获取分类失败！")
+	} else {
+		//读取记录集合
+		for rows.Next() {
+			err := rows.Scan(&tag.Id, &tag.TagName)
+			if err != nil {
+				ctx.Fail(500, "10001", "获取分类失败！")
+			}
+			tags = append(tags, tag)
+		}
+		ctx.Success(gin.H{
+			"tag_list": tags,
+		})
+	}
 }
 
 //增加分类
