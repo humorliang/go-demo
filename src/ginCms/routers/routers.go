@@ -3,17 +3,15 @@ package routers
 import (
 	"github.com/gin-gonic/gin"
 	"ginCms/controllers/user"
-	"ginCms/controllers/tags"
+	"ginCms/controllers/tag"
 	"ginCms/middleware"
 	"ginCms/controllers/test"
 	"ginCms/controllers/article"
-	"fmt"
 )
 
 //初始化路由映射函数
-func SetupRouter() *gin.Engine {
-	fmt.Println("router")
-	router := gin.New()
+func SetupRouter(router *gin.Engine) {
+
 	//认证路由
 	authRouterGroup := router.Group("/auth", middleware.JWTAuth())
 	//测试认证路由
@@ -27,13 +25,13 @@ func SetupRouter() *gin.Engine {
 
 	//分类路由
 	//获取分类
-	router.GET("/tag", tags.GetTags)
+	router.GET("/tag", tag.GetTags)
 	//添加分类
-	router.POST("/tag", tags.AddTag)
+	router.POST("/tag", tag.AddTag)
 	//修改分类
-	router.PUT("/tag", tags.UpdateTag)
+	router.PUT("/tag", tag.UpdateTag)
 	//删除分类
-	router.DELETE("/tag", tags.DeleteTag)
+	router.DELETE("/tag", tag.DeleteTag)
 
 	//文章路由
 	//获取分类文章
@@ -47,5 +45,4 @@ func SetupRouter() *gin.Engine {
 	//删除文章
 	router.DELETE("/post", article.DeleteArticle)
 
-	return router
 }

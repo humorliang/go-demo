@@ -5,9 +5,8 @@ import (
 	"ginCms/middleware"
 	"flag"
 	"ginCms/comm/setting"
-	"ginCms/routers"
 	"ginCms/db"
-	"strconv"
+	"ginCms/routers"
 )
 
 func main() {
@@ -28,8 +27,10 @@ func main() {
 	//设置模式
 	gin.SetMode(setting.ServerSetting.RunMode)
 
-	//基础路由(不包含任何中间件的路由)
-	router := routers.SetupRouter()
+	//基础路由对象(不包含任何中间件的路由)
+	router := gin.New()
+	//路由注册
+	routers.SetupRouter(router)
 
 	//中间件注册
 	//logger中间件
@@ -38,6 +39,6 @@ func main() {
 	router.Use(gin.Recovery())
 
 	//路由初始化
-	router.Run(strconv.Itoa(setting.ServerSetting.HttpPort))
+	router.Run()
 
 }
