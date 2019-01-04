@@ -7,7 +7,8 @@ import (
 )
 
 type App struct {
-	PageSize int
+	PageSize        int
+	CommentPageSize int
 }
 type Server struct {
 	RunMode      string

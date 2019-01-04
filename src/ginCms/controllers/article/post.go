@@ -84,9 +84,7 @@ func GetTagArticle(c *gin.Context) {
 			artList = append(artList, art)
 		}
 	}
-	ctx.Success(gin.H{
-		"postList": artList,
-	})
+	ctx.Success(artList)
 }
 
 //获取推荐文章
@@ -118,9 +116,7 @@ func GetRecomArticle(c *gin.Context) {
 			artList = append(artList, art)
 		}
 	}
-	ctx.Success(gin.H{
-		"postList": artList,
-	})
+	ctx.Success(artList)
 }
 
 //获取文章详情

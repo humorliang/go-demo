@@ -6,6 +6,7 @@ import (
 	"ginCms/controllers/tag"
 	"ginCms/controllers/test"
 	"ginCms/controllers/article"
+	"ginCms/controllers/comment"
 )
 
 //初始化路由映射函数
@@ -47,5 +48,11 @@ func SetupRouter(router *gin.Engine) {
 	//test路由
 	router.GET("/test/log", test.ReTestLogger)
 
+	//文章评论
+	//获取评论
+	router.GET("/comment", comment.GetPostComment)
+	//发表评论
+	router.POST("/comment",comment.AddComment)
+	//
 
 }
