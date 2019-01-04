@@ -26,15 +26,21 @@ type GetArticleListJson struct {
 	} `json:"data"`
 }
 type ArticleItemInfo struct {
-	PostId            int     `json:"postId"`
+	PostId        int     `json:"postId"`
 	Desp          string  `json:"desp"`
 	Title         string  `json:"title"`
+	Content       string  `json:"content,omitempy"`
 	Date          string  `json:"date"`
 	PreviewImgUrl *string `json:"previewImgUrl"` //当数据库解析字段为空值时，变为nil
 	UserId        int     `json:"userId"`
 	PenName       string  `json:"penName"`
 	TagId         int     `json:"tagId"`
 	TagName       string  `json:"tagName"`
+}
+type ArticleId struct {
+	Data struct {
+		PostID int `json:"postId" binding:"required"`
+	} `json:"data"`
 }
 
 //获取文章
@@ -120,7 +126,43 @@ func GetRecomArticle(c *gin.Context) {
 //获取文章详情
 func GetDescArticle(c *gin.Context) {
 	ctx := controllers.Context{c}
-	ctx.Success("成功")
+	//json结构化
+	artId := &ArticleId{}
+	err := ctx.BindJSON(artId)
+	if err != nil {
+		ctx.Fail(500, "10001", "获取文章详情失败！")
+		return
+	}
+	//sql
+	rows, err := db.Con.Query("SELECT a.id,a.desp,a.title,a.content,"+
+		"a.date,a.preview_img_url,a.user_id,a.tag_id,u.pen_name,t.tag_name "+
+		"FROM user u,article a,tag t "+
+		"WHERE a.user_id=u.id AND a.tag_id=t.id AND a.id=?", artId.Data.PostID)
+	if err != nil {
+		comm.Log("error").Println(err)
+		ctx.Fail(500, "10001", "获取文章详情失败！")
+		return
+	}
+	//fmt.Println(rows, artDesp.Data.PostID)
+	//sql结果解析
+	var art ArticleItemInfo
+	var artList []ArticleItemInfo
+	for rows.Next() {
+		err := rows.Scan(&art.PostId, &art.Desp, &art.Title, &art.Content, &art.Date,
+			&art.PreviewImgUrl, &art.UserId, &art.TagId, &art.PenName, &art.TagName)
+		if err != nil {
+			comm.Log("error").Println(err)
+			ctx.Fail(500, "10001", "获取推荐文章失败！")
+			return
+		} else {
+			artList = append(artList, art)
+		}
+	}
+	if len(artList) != 0 {
+		ctx.Success(artList[0])
+	} else {
+		ctx.Fail(500, "10001", "没有文章详情")
+	}
 }
 
 //添加文章
@@ -162,5 +204,21 @@ func AddArticle(c *gin.Context) {
 //删除文章
 func DeleteArticle(c *gin.Context) {
 	ctx := controllers.Context{c}
-	ctx.Success("成功")
+	//json结构化
+	artId := &ArticleId{}
+	err := ctx.BindJSON(artId)
+	if err != nil {
+		comm.Log("error").Println(err)
+		ctx.Fail(500, "10001", "删除文章失败！")
+		return
+	}
+	//sql
+	_, err = db.Con.Exec("DELETE FROM article WHERE id=?", artId.Data.PostID)
+	if err != nil {
+		comm.Log("error").Println(err)
+		ctx.Fail(500, "10001", "删除文章失败！")
+		return
+	} else {
+		ctx.Success("文章删除成功！")
+	}
 }

@@ -38,7 +38,7 @@ func SetupRouter(router *gin.Engine) {
 	//获取推荐文章
 	router.GET("/post/list/recom", article.GetRecomArticle)
 	//获取文章详情
-	router.GET("/post", article.GetDescArticle)
+	router.GET("/post/desp", article.GetDescArticle)
 	//添加文章
 	router.POST("/post", article.AddArticle)
 	//删除文章
