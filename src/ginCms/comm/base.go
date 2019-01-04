@@ -1,7 +1,9 @@
 package comm
 
+import "ginCms/controllers"
+
 //检查是否是错误
-func IsCheckError(f interface{}, err error) (c bool) {
+func IsCheckError(ctx *controllers.Context, f interface{}, err error) (c bool) {
 	if err != nil {
 		return true
 	} else {

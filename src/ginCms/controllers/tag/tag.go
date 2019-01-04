@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"ginCms/controllers"
 	"ginCms/db"
-	"log"
+	"ginCms/comm"
 )
 
 type Tag struct {
@@ -13,18 +13,18 @@ type Tag struct {
 }
 type AddTagJson struct {
 	Data struct {
-		TagName string `json:"tag_name"`
+		TagName string `json:"tag_name"  binding:"required"` //json必须传递项，没有则报错
 	} `json:"data"`
 }
 type UpTagJson struct {
 	Data struct {
-		ID      int    `json:"id"`
-		TagName string `json:"tag_name"`
+		ID      int    `json:"id" binding:"required"`
+		TagName string `json:"tag_name" binding:"required"`
 	} `json:"data"`
 }
 type DelTagJson struct {
 	Data struct {
-		ID int `json:"id"`
+		ID int `json:"id" binding:"required"`
 	} `json:"data"`
 }
 
@@ -33,8 +33,11 @@ func GetTags(c *gin.Context) {
 	ctx := controllers.Context{c}
 	var tag Tag
 	var tags []Tag
-	//数据查询
+	//sql查询
 	rows, err := db.Con.Query("SELECT id,tag_name FROM tag")
+	defer rows.Close()
+
+	//sql结果
 	if err != nil {
 		ctx.Fail(500, "10001", "获取分类失败！")
 	} else {
@@ -59,19 +62,20 @@ func AddTag(c *gin.Context) {
 	tag := &AddTagJson{}
 	err := ctx.BindJSON(tag)
 	if err != nil {
-		log.Println(err)
+		comm.Log("error").Println(err)
 		ctx.Fail(500, "10001", "添加分类失败！")
+		return
 	}
 	//执行插入语句
 	res, err := db.Con.Exec("INSERT INTO tag (tag_name) VALUES (?)", tag.Data.TagName)
 	if err != nil {
-		log.Println(err)
+		comm.Log("error").Println(err)
 		ctx.Fail(500, "10001", "添加分类失败！")
 	} else {
 		//获取插入tagId
 		tagId, err := res.LastInsertId()
 		if err != nil {
-			log.Println(err)
+			comm.Log("error").Println(err)
 			ctx.Fail(500, "10001", "获取分类Id失败")
 		} else {
 			ctx.Success(gin.H{
@@ -91,6 +95,7 @@ func UpdateTag(c *gin.Context) {
 	err := ctx.BindJSON(upTag)
 	if err != nil {
 		ctx.Fail(500, "10001", "更新分类失败！")
+		return
 	}
 	//更新数据SQL
 	_, err = db.Con.Exec("UPDATE tag SET tag_name=? WHERE id=?", upTag.Data.TagName, upTag.Data.ID)
@@ -112,11 +117,14 @@ func DeleteTag(c *gin.Context) {
 	delTag := &DelTagJson{}
 	err := ctx.BindJSON(delTag)
 	if err != nil {
-		ctx.Fail(500,"10001","删除标签失败！")
+		ctx.Fail(500, "10001", "删除标签失败！")
+		return
 	}
 	//执行删除SQL
-	_,err:=db.Con.Exec("DELETE FROM tag WHERE id=?",delTag.Data.ID)
-	if err!=nil {
-		ctx.Fail("")
+	_, err = db.Con.Exec("DELETE FROM tag WHERE id=?", delTag.Data.ID)
+	if err != nil {
+		ctx.Fail(500, "10001", "删除标签失败！")
+	} else {
+		ctx.Success("删除标签成功！")
 	}
 }

@@ -4,7 +4,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"ginCms/controllers/user"
 	"ginCms/controllers/tag"
-	"ginCms/middleware"
 	"ginCms/controllers/test"
 	"ginCms/controllers/article"
 )
@@ -13,9 +12,9 @@ import (
 func SetupRouter(router *gin.Engine) {
 
 	//认证路由
-	authRouterGroup := router.Group("/auth", middleware.JWTAuth())
+	//authRouterGroup := router.Group("/auth", middleware.JWTAuth())
 	//测试认证路由
-	authRouterGroup.GET("/test", test.ReTest)
+	//authRouterGroup.GET("/test", test.ReTest)
 
 	//用户路由
 	//登录
@@ -44,5 +43,9 @@ func SetupRouter(router *gin.Engine) {
 	router.POST("/post", article.AddArticle)
 	//删除文章
 	router.DELETE("/post", article.DeleteArticle)
+
+	//test路由
+	router.GET("/test/log", test.ReTestLogger)
+
 
 }

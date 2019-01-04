@@ -2,11 +2,12 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"ginCms/middleware"
 	"flag"
 	"ginCms/comm/setting"
 	"ginCms/db"
 	"ginCms/routers"
+	"ginCms/middleware"
+	"strconv"
 )
 
 func main() {
@@ -29,8 +30,6 @@ func main() {
 
 	//基础路由对象(不包含任何中间件的路由)
 	router := gin.New()
-	//路由注册
-	routers.SetupRouter(router)
 
 	//中间件注册
 	//logger中间件
@@ -38,7 +37,10 @@ func main() {
 	//异常恢复中间件
 	router.Use(gin.Recovery())
 
+	//路由注册,要在注册组件之后
+	routers.SetupRouter(router)
+
 	//路由初始化
-	router.Run()
+	router.Run(":" + strconv.Itoa(setting.ServerSetting.HttpPort))
 
 }

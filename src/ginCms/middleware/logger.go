@@ -3,9 +3,9 @@ package middleware
 import (
 	"time"
 	"github.com/gin-gonic/gin"
-	"strings"
 	"fmt"
 	"net/http"
+	"strings"
 	"ginCms/utils"
 )
 
@@ -99,10 +99,7 @@ func Logger() gin.HandlerFunc {
 				f := utils.OpenFile(rqFilePath)
 				//写入日志文件
 				f.WriteString(reqInfo)
-				//fmt.Println("request log")
 			}
-
 		}()
-
 	}
 }
