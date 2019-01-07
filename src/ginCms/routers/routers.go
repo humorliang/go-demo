@@ -52,7 +52,10 @@ func SetupRouter(router *gin.Engine) {
 	//获取评论
 	router.GET("/comment", comment.GetPostComment)
 	//发表评论
-	router.POST("/comment",comment.AddComment)
-	//
+	router.POST("/comment", comment.AddComment)
+
+	//评论回复
+	//添加回复评论
+	router.POST("/reply", comment.AddReplyComment)
 
 }
