@@ -66,3 +66,17 @@ func TodayFileName() (fileName string) {
 	return strings.Split(time.Now().String(), " ")[0] + ".log"
 }
 
+//检查文件夹，不存在则创建
+func CheckCreateDir(path string) (bool, error) {
+	if CheckFileDirIsNotExits(path) {
+		return true, nil
+	} else {
+		//创建文件夹
+		err := os.MkdirAll(path, os.ModePerm)
+		if err != nil {
+			log.Panic(err)
+			return false, err
+		}
+		return true, nil
+	}
+}

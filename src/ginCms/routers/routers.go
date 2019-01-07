@@ -7,6 +7,7 @@ import (
 	"ginCms/controllers/test"
 	"ginCms/controllers/article"
 	"ginCms/controllers/comment"
+	"ginCms/controllers/upload"
 )
 
 //初始化路由映射函数
@@ -58,4 +59,7 @@ func SetupRouter(router *gin.Engine) {
 	//添加回复评论
 	router.POST("/reply", comment.AddReplyComment)
 
+
+	//上传图片
+	router.POST("/upload",upload.ImageUpload)
 }

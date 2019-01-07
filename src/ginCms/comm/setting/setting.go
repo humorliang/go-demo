@@ -9,6 +9,7 @@ import (
 type App struct {
 	PageSize        int
 	CommentPageSize int
+	ImageUploadPath string
 }
 type Server struct {
 	RunMode      string
