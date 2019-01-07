@@ -18,7 +18,7 @@ func JWTAuth() gin.HandlerFunc {
 			ctx.Fail(500, "40001", "请求未认证")
 		} else {
 			//判断token
-			_, err := utils.ParseToken(token)
+			claims, err := utils.ParseToken(token)
 			if err != nil {
 				comm.Log("error").Println(err)
 				//token错误判断
@@ -33,6 +33,7 @@ func JWTAuth() gin.HandlerFunc {
 					return
 				}
 			}
+			ctx.Set("userId", claims.UserId)
 		}
 		//
 		ctx.Next()

@@ -48,6 +48,7 @@ func SetupRouter(router *gin.Engine) {
 
 	//test路由
 	router.GET("/test/log", test.ReTestLogger)
+	router.GET("/test", test.ReTestLogger)
 
 	//文章评论
 	//获取评论
@@ -59,7 +60,6 @@ func SetupRouter(router *gin.Engine) {
 	//添加回复评论
 	router.POST("/reply", comment.AddReplyComment)
 
-
 	//上传图片
-	router.POST("/upload",upload.ImageUpload)
+	router.POST("/upload", upload.ImageUpload)
 }
