@@ -15,7 +15,7 @@ import (
 */
 func main() {
 	//设置环境变量
-	os.Setenv("FOO", "test")
+	os.Setenv("FOO", "tests")
 	//获取环境变量
 	fmt.Println("FOO:", os.Getenv("FOO"))
 	//不存在的key为空字符串

@@ -41,7 +41,7 @@ func closeFile(f *os.File) {
 }
 
 func main() {
-	f := createFile("./test.txt")
+	f := createFile("./tests.txt")
 	//延迟函数在函数要结束关闭前
 	defer closeFile(f)
 	writeFile(f)

@@ -1,0 +1,7 @@
+[error]2019/01/07 09:00:15 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:84: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c,user u WHERE u.id=(SELECT user_id From article WHERE article_id=?) AND c.artic' at line 1
+[error]2019/01/07 09:11:21 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:85: Error 1242: Subquery returns more than 1 row
+[error]2019/01/07 09:16:11 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:85: sql: expected 3 arguments, got 4
+[error]2019/01/07 10:19:45 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:156: Error 1452: Cannot add or update a child row: a foreign key constraint fails (`blog_cms`.`reply`, CONSTRAINT `reply_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`))
+[error]2019/01/07 10:24:43 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:125: Error 1054: Unknown column 'r.article_id' in 'where clause'
+[error]2019/01/07 10:25:33 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:125: Error 1054: Unknown column 'c.date' in 'order clause'
+[error]2019/01/07 10:44:41 /Users/datatist001/gopath/src/ginCms/controllers/comment/comment.go:128: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')ORDER BY r.date' at line 1

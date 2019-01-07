@@ -43,5 +43,4 @@ func main() {
 
 	//路由初始化
 	router.Run(":" + strconv.Itoa(setting.ServerSetting.HttpPort))
-
 }

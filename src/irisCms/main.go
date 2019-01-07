@@ -30,13 +30,13 @@ func main() {
 	if *AppEnvName == "dev" {
 		app.Run(
 			iris.Addr("127.0.0.1:8080"),
-			iris.WithConfiguration(iris.YAML("./configs/dev.yml")),
+			iris.WithConfiguration(iris.YAML("./configs/dev.ini")),
 		)
 		//fmt.Println(app.ConfigurationReadOnly().GetFireMethodNotAllowed())
 	} else if *AppEnvName == "pro" {
 		app.Run(
 			iris.Addr("127.0.0.1:8080"),
-			iris.WithConfiguration(iris.YAML("./configs/pro.yml")),
+			iris.WithConfiguration(iris.YAML("./configs/pro.ini")),
 		)
 	}
 }

@@ -13,7 +13,7 @@ func main() {
 	//panic("a problem")
 
 	//
-	_, err := os.Create("./test.txt")
+	_, err := os.Create("./tests.txt")
 	if err != nil {
 		panic(err)
 	}

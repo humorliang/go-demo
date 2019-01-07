@@ -21,12 +21,12 @@ func check(e error) {
 }
 func main() {
 	//读取文件到内存
-	dat, err := ioutil.ReadFile("./test.txt")
+	dat, err := ioutil.ReadFile("./tests.txt")
 	check(err)
 	fmt.Println(string(dat))
 
 	//打开文件
-	f, err := os.Open("./test.txt")
+	f, err := os.Open("./tests.txt")
 	check(err)
 	//fmt.Println(f)
 	//读取大小

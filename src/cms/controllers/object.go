@@ -17,7 +17,7 @@ type ObjectController struct {
 // @Param	body		body 	blog.Object	true		"The object content"
 // @Success 200 {string} blog.Object.Id
 // @Failure 403 body is empty
-// @router / [post]
+// @router / [article]
 func (o *ObjectController) Post() {
 	var ob models.Object
 	json.Unmarshal(o.Ctx.Input.RequestBody, &ob)

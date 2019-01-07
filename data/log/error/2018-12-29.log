@@ -1,0 +1,17 @@
+[error]2018/12/29 09:57:52 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:87: 用户名查询错误： Error 1054: Unknown column 'username' in 'where clause'
+[error]2018/12/29 09:58:36 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:87: 用户名查询错误： Error 1054: Unknown column 'username' in 'where clause'
+[error]2018/12/29 10:05:30 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:89: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:11:22 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:89: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:01 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:01 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:02 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:03 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:23 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:25:24 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:93: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:43:19 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:91: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:43:19 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:91: 用户名查询错误： sql: database is closed
+[error]2018/12/29 10:43:20 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:91: 用户名查询错误： sql: database is closed
+[error]2018/12/29 15:14:20 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:40: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?,pass_word=?' at line 1
+[error]2018/12/29 15:15:26 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:40: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND pass_word=?' at line 1
+[error]2018/12/29 15:17:08 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:40: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND pass_word=?' at line 1
+[error]2018/12/29 15:17:18 /Users/datatist001/gopath/src/ginCms/controllers/user/user.go:40: Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',pass_word=?' at line 1

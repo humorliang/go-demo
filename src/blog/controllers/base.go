@@ -4,18 +4,20 @@ import (
 	"github.com/astaxie/beego"
 )
 
-
 //路由控制
-type MainController struct {
-	beego.Controller
+type BaseController struct {
+	beego.Controller //beego基础
+	IsLogin    bool  //是否登录
+	UserUserId int64 //用户id
 }
 
-//API数据类型
-
-
-//get 请求
-func (c *MainController) Get() {
-	//c.Data["Website"] = "beego.me"
-	//c.Data["Email"] = "astaxie@gmail.com"
-	//c.TplName = "index.tpl"
+// 基础控制准备方法
+func (c *BaseController) Prepare() {
+	userLogin := c.GetSession("userLogin")
+	//判断用户是否登录
+	if userLogin == nil {
+		c.IsLogin = false
+	} else {
+		c.IsLogin = true
+	}
 }

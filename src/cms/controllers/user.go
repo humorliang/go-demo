@@ -17,7 +17,7 @@ type UserController struct {
 // @Param	body		body 	blog.User	true		"body for user content"
 // @Success 200 {int} blog.User.Id
 // @Failure 403 body is empty
-// @router / [post]
+// @router / [article]
 func (u *UserController) Post() {
 	var user models.User
 	json.Unmarshal(u.Ctx.Input.RequestBody, &user)
