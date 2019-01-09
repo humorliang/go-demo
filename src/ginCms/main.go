@@ -34,7 +34,9 @@ func main() {
 	//中间件注册
 	//logger中间件
 	router.Use(middleware.Logger())
-	router.Use(middleware.UserId())
+	//router.Use(middleware.UserId()
+	//解决跨域问题中间件
+	router.Use(middleware.Cors())
 	//异常恢复中间件
 	router.Use(gin.Recovery())
 

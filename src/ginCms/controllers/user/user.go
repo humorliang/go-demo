@@ -79,7 +79,7 @@ func Login(c *gin.Context) {
 			}
 		}
 	} else {
-		ctx.Fail(400, 40001, "用户名不存在！")
+		ctx.Fail(500, "10001", "用户名不存在！")
 	}
 }
 
