@@ -10,9 +10,9 @@ import (
 )
 
 const (
-	errorLogDir = "./data/log/error/"
-	infoLogDir  = "./data/log/info/"
-	debugLogDir = "./data/log/debug/"
+	errorLogDir = "./car/log/error/"
+	infoLogDir  = "./car/log/info/"
+	debugLogDir = "./car/log/debug/"
 )
 
 func NewLogger(prefix string, errContent interface{}) (l *log.Logger) {

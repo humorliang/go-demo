@@ -14,18 +14,18 @@ type Tag struct {
 type AddTagJson struct {
 	Data struct {
 		TagName string `json:"tag_name"  binding:"required"` //json必须传递项，没有则报错
-	} `json:"data"`
+	} `json:"car"`
 }
 type UpTagJson struct {
 	Data struct {
 		ID      int    `json:"id" binding:"required"`
 		TagName string `json:"tag_name" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 type DelTagJson struct {
 	Data struct {
 		ID int `json:"id" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 
 //获取分类

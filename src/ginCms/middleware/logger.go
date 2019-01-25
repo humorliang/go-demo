@@ -9,7 +9,7 @@ import (
 	"ginCms/utils"
 )
 
-const requestDir = "../../data/log/request"
+const requestDir = "../../car/log/request"
 
 //日志数据格式字段
 type LogFormatterParams struct {

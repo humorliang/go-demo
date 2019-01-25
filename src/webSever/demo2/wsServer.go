@@ -93,10 +93,10 @@ window.addEventListener("load", function(evt) {
             ws = null;
         }
         ws.onmessage = function(evt) {
-            console.log("RESPONSE: " + evt.data);
+            console.log("RESPONSE: " + evt.car);
         }
         ws.onerror = function(evt) {
-            console.log("ERROR: " + evt.data);
+            console.log("ERROR: " + evt.car);
         }
         return false;
     };

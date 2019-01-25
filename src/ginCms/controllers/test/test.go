@@ -23,9 +23,9 @@ func ReTestLogger(c *gin.Context) {
 	ctx := controllers.Context{c}
 	fmt.Println(ctx.Get("k"))
 	c.JSON(200, gin.H{
-		"data": "test",
+		"car": "test",
 	})
 	//c.JSON(200, gin.H{
-	//	"data": "test2",
+	//	"car": "test2",
 	//})
 }

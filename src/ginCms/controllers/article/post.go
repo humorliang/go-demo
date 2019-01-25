@@ -17,13 +17,13 @@ type AddArticleJson struct {
 		UserID        int    `json:"userId" binding:"required"`
 		PreviewImgUrl string `json:"previewImgUrl"`
 		IsRecommend   int    `json:"isRecommend"`
-	} `json:"data"`
+	} `json:"car"`
 }
 type GetArticleListJson struct {
 	Data struct {
 		PageNum int `json:"pageNum" binding:"required"`
 		TagID   int `json:"tagId" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 type ArticleItemInfo struct {
 	PostId        int     `json:"postId"`
@@ -40,7 +40,7 @@ type ArticleItemInfo struct {
 type ArticleId struct {
 	Data struct {
 		PostID int `json:"postId" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 
 //获取文章

@@ -18,13 +18,13 @@ func main() {
 	//fmt.Println(strings.Split(time.Now().String(), " ")[0] + ".log")
 	//utils.CreateAppendWriteFile("./dataTest/","tests.txt",[]byte("hello world\n"))
 	//fmt.Println(comm.DbConfigRead("./configs/", "dev.ini"))
-	utils.CreateAppendWriteFile("./data/log/info/", utils.TodayFileName(), nil)
+	utils.CreateAppendWriteFile("./car/log/info/", utils.TodayFileName(), nil)
 }
 
 //创建一个新的日志文件
 func newLogFile() *os.File {
 	//文件名
-	filename := "/Users/datatist001/gopath/data/test2.txt"
+	filename := "/Users/datatist001/gopath/car/test2.txt"
 	//打开文件以创建写和追加的方式打开
 	f, err := os.OpenFile(filename, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {

@@ -13,7 +13,7 @@ import (
 )
 
 //日志文件目录
-const requestLogDir = "./data/log/request/"
+const requestLogDir = "./car/log/request/"
 
 //获取一个http请求的logger，不能代替全局的log
 func NewRequestLogger() (h iris.Handler) {

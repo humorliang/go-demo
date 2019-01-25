@@ -31,7 +31,7 @@ func createFile(p string) *os.File {
 */
 func writeFile(f *os.File) {
 	fmt.Println("write file")
-	fmt.Fprint(f, "this is data")
+	fmt.Fprint(f, "this is car")
 }
 
 //关闭文件

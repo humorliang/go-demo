@@ -13,7 +13,7 @@ func (ctx *Context) Success(data interface{}) {
 	ctx.JSON(200, gin.H{
 		"code": 0,
 		"msg":  "success",
-		"data": data,
+		"car": data,
 	})
 }
 
@@ -22,6 +22,6 @@ func (ctx *Context) Fail(status int, code interface{}, msg string) {
 	ctx.JSON(status, gin.H{
 		"code": code,
 		"msg":  msg,
-		"data": "",
+		"car": "",
 	})
 }

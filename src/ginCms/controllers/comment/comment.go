@@ -14,14 +14,14 @@ type Comment struct {
 		Content   string `json:"content" binding:"required"`
 		UserId    int    `json:"userId" binding:"required"`
 		ArticleId int    `json:"articleId" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 
 type CommentList struct {
 	Data struct {
 		PostId  int `json:"postId" binding:"required"`
 		PageNum int `json:"pageNum" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 
 //评论信息
@@ -45,7 +45,7 @@ type ReplyJson struct {
 		CommentID int    `json:"commentId" binding:"required"`
 		Content   string `json:"content" binding:"required"`
 		UserID    int    `json:"userId" binding:"required"`
-	} `json:"data"`
+	} `json:"car"`
 }
 
 //发表评论
