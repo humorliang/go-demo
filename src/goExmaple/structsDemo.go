@@ -7,7 +7,7 @@ import "fmt"
 	我们可以声明新的类型，作为其它类型的属性或字段的 容器
 	可变的
 格式：
-type person struct {
+type product struct {
 	name string
 	age int
 }
