@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d9dd69-0e6c-4cd0-9bfd-aec65e63f6a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pattern/factory/car/factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pattern/factory/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/objpool/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pattern/objpool/pool/pool.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/comm/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/comm/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/controllers/article/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/controllers/article/post.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/controllers/comment/comment.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/controllers/comment/comment.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/controllers/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/controllers/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/controllers/tag/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/controllers/tag/tag.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/controllers/test/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/controllers/test/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/middleware/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/middleware/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ginCms/tests/testMain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ginCms/tests/testMain.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/astaxie/beego" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/beego/bee" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/beego/bee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/dgrijalva/jwt-go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/dgrijalva/jwt-go" afterDir="false" />
@@ -37,14 +29,8 @@
       <change beforePath="$PROJECT_DIR$/src/github.com/spf13/pflag" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/spf13/pflag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/spf13/viper" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/spf13/viper" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/ugorji/go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/ugorji/go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/goExmaple/deferDemo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/goExmaple/deferDemo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gopkg.in/go-playground/validator.v8" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/go-playground/validator.v8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gopkg.in/yaml.v2" beforeDir="false" afterPath="$PROJECT_DIR$/src/gopkg.in/yaml.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/irisCms/comm/log.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/irisCms/comm/log.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/irisCms/middleware/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/irisCms/middleware/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/irisCms/test/testMain.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/irisCms/test/testMain.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/irisCms/test/utilsTest.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/irisCms/test/utilsTest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webSever/demo2/wsServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/webSever/demo2/wsServer.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,53 +40,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45632654">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="bulider.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pattern/builder/product/bulider.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="69">
-                  <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-                  <folding>
-                    <element signature="n#!!block;n#ShowInfo#0" />
-                    <element signature="n#!!block;n#BuildId#0" />
-                    <element signature="n#!!block;n#BuildTitle#0" />
-                    <element signature="n#!!block;n#BuildPrice#0" />
-                    <element signature="n#!!block;n#Bind#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="factory.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pattern/factory/car/factory.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pattern/factory/main.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#14#54#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pattern/objpool/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="e#14#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pool.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pattern/objpool/pool/pool.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ginCms/comm/log.go" />
-        <option value="$PROJECT_DIR$/src/ginCms/database/mysql.go" />
         <option value="$PROJECT_DIR$/src/ginCms/controllers/base.go" />
         <option value="$PROJECT_DIR$/src/ginCms/controllers/post/post.go" />
         <option value="$PROJECT_DIR$/src/ginCms/db/sql.go" />
@@ -173,6 +133,8 @@
         <option value="$PROJECT_DIR$/src/pattern/factory/data/factory.go" />
         <option value="$PROJECT_DIR$/src/pattern/factory/main.go" />
         <option value="$PROJECT_DIR$/src/pattern/factory/car/factory.go" />
+        <option value="$PROJECT_DIR$/src/pattern/objpool/pool/pool.go" />
+        <option value="$PROJECT_DIR$/src/pattern/objpool/main.go" />
       </list>
     </option>
   </component>
@@ -224,30 +186,15 @@
               <item name="gopath" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
+              <item name="objpool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopath" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopath" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopath" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="car" type="462c0819:PsiDirectoryNode" />
+              <item name="objpool" type="462c0819:PsiDirectoryNode" />
+              <item name="pool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gopath" type="b2602c69:ProjectViewProjectNode" />
@@ -292,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (3)">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -301,20 +248,20 @@
       <filePath value="$PROJECT_DIR$/src/pattern/builder/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gopath" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/irisCms/test/main.go" />
-      <directory value="$PROJECT_DIR$/" />
-    </configuration>
     <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gopath" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/src/pattern/factory/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gopath" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/pattern/objpool/main.go" />
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <configuration name="go build testLog.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -334,19 +281,19 @@
       <directory value="$PROJECT_DIR$/" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (2)" />
       <item itemvalue="Go Build.go build testMain.go" />
       <item itemvalue="Go Build.go build testLog.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Build.go build main.go (3)" />
+      <item itemvalue="Go Build.go build main.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build testLog.go" />
         <item itemvalue="Go Build.go build testMain.go" />
-        <item itemvalue="Go Build.go build main.go (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -423,20 +370,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/github.com/dgrijalva/jwt-go/errors.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ginCms/controllers/user/rule.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/github.com/gin-gonic/gin/mode.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -741,6 +674,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pattern/factory/car/factory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pattern/builder/product/bulider.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -765,10 +705,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pattern/factory/car/factory.go">
+    <entry file="file://$PROJECT_DIR$/src/pattern/objpool/pool/pool.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="67" column="26" lean-forward="true" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        <state relative-caret-position="407">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pattern/objpool/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#14#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
