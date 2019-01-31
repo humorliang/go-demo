@@ -1,0 +1,4 @@
+go get github.com/aws/aws-sdk-go/aws
+go get github.com/aws/aws-sdk-go
+go get github.com/SebastiaanKlippert/go-wkhtmltopdf
+go get github.com/aws/aws-lambda-go

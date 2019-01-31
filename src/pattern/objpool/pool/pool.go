@@ -1,21 +1,24 @@
 package pool
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 /*
 对象池：创建一个简单的对象池模式
+对象池模式是一种创建型模式，根据需求来预测将要使用的对象，提前创建并保存在内存中。
 */
 //定义一个对象
-type DbCon struct {
+type Object struct {
 	name string
 }
 
-func (db *DbCon) index(index int) {
-	fmt.Println("这是对象：", index)
+func (obj *Object) Do(index int) {
+	fmt.Println("object Do:", strconv.Itoa(index))
 }
 
-//定义一个对象通道（对象池）
-type Pool chan *DbCon
+type Pool chan *Object
 
 //对象池函数
 func New(total int) *Pool {
@@ -23,7 +26,7 @@ func New(total int) *Pool {
 	p := make(chan *DbCon, total)
 	//往对象池传递可用对象
 	for i := 0; i < total; i++ {
-		p <- new(DbCon)
+		p <- new(Object)
 	}
 	//返回对象池
 	return &p
