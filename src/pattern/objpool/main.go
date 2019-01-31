@@ -3,9 +3,6 @@ package main
 import (
 	"sync"
 	"pattern/objpool/pool"
-<<<<<<< HEAD
-
-=======
 	"fmt"
 )
 
@@ -27,5 +24,4 @@ func main() {
 		}(*p, index)
 	}
 	wait.Wait()
->>>>>>> ee1f3611df2e05a70921c1884ad1d6be0a578dce
 }
