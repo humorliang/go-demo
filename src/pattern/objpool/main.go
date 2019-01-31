@@ -2,12 +2,20 @@ package main
 
 import (
 	"pattern/objpool/pool"
+	"sync"
 )
 
 func main() {
 	p := pool.New(10)
-	select {
-	case obj := <-p:
+	var wg sync.WaitGroup
+	for{
+		wg.Add(1)
+		go func() {
+			select {
+			case <-p:
 
+			}
+		}()
 	}
+
 }
