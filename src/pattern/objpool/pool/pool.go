@@ -23,7 +23,7 @@ type Pool chan *Object
 //对象池函数
 func New(total int) *Pool {
 	//初始化对象池
-	p := make(Pool, total)
+	p := make(chan *DbCon, total)
 	//往对象池传递可用对象
 	for i := 0; i < total; i++ {
 		p <- new(Object)
