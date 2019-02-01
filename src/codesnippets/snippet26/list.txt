@@ -1,0 +1,2 @@
+# 文件类型转换大小库
+go get github.com/dustin/go-humanize

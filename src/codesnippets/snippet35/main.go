@@ -1,1 +1,1 @@
-package snippet35
+package main
