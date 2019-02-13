@@ -1,4 +1,4 @@
-package service
+package sv
 
 import "context"
 
@@ -19,7 +19,8 @@ type Reply struct {
 
 //定义了一个叫做 Arith 的 service， 并且为它实现了 Mul 方法。
 //服务类型
-type Arith int
+type Arith struct {
+}
 
 // 服务方法
 func (t *Arith) Mul(ctx context.Context, args *Args, reply *Reply) error {
