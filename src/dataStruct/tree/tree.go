@@ -1,4 +1,4 @@
-package twoTree
+package tree
 
 import (
 	"fmt"
@@ -12,6 +12,7 @@ import (
 
 //节点
 type Node struct {
+	Level       int
 	Value       int
 	Left, Right *Node //节点指针类型
 }
@@ -78,10 +79,70 @@ func (n *Node) AfterTraver() {
 	n.GetValue()
 }
 
-//广度优先(层级遍历)
-func (n *Node) BreadthTraver() {
-	if n == nil {
-		return
-	}
+//节点层级
+func NodeLevel(n *Node, key int) {
+	//初始化层级
+	level := 1
+	lev := findLevel(n, level, 3)
+	fmt.Printf("key:%v 在第 %v 层\n", key, lev)
+}
 
+//广度优先
+func BreadthFirst(n *Node) ([]interface{}) {
+	//广度优先利用队列  
+
+	//结果容器
+	var result []interface{}
+	//节点容器
+	var nodes = []Node{*n}
+	//遍历循环判断
+	for len(nodes) > 0 {
+		//取节点
+		node := nodes[0]
+		//更新节点容器
+		nodes = nodes[1:]
+		//插入节点值
+		result = append(result, node.Value)
+
+		//下一层节点判断并插入节点容器
+		if node.Left != nil {
+			nodes = append(nodes, *node.Left)
+		}
+		if node.Right != nil {
+			nodes = append(nodes, *node.Right)
+		}
+	}
+	return result
+}
+
+//二叉树的深度
+func NodeDepth(n *Node) int {
+	//深度计算
+	depth := 0
+	//当节点为空时结束递归
+	if n != nil {
+		if NodeDepth(n.Left) > NodeDepth(n.Right) {
+			depth = NodeDepth(n.Left) + 1
+		} else {
+			depth = NodeDepth(n.Right) + 1
+		}
+	}
+	return depth
+}
+
+//输出层级
+func findLevel(n *Node, level int, key int) int {
+	if n == nil {
+		return 0
+	}
+	if n.Key == key {
+		return level
+	}
+	var lev int
+	lev = findLevel(n.Left, level+1, key)
+	if lev == 0 {
+		return findLevel(n.Right, lev+1, key)
+	} else {
+		return lev
+	}
 }
