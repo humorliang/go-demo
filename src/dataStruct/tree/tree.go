@@ -12,7 +12,7 @@ import (
 
 //节点
 type Node struct {
-	Level       int
+	Layer       int
 	Value       int
 	Left, Right *Node //节点指针类型
 }
@@ -80,11 +80,29 @@ func (n *Node) AfterTraver() {
 }
 
 //节点层级
-func NodeLevel(n *Node, key int) {
+func NodeLevel(n *Node, value int) {
 	//初始化层级
 	level := 1
-	lev := findLevel(n, level, 3)
-	fmt.Printf("key:%v 在第 %v 层\n", key, lev)
+	lev := findLevel(n, level, value)
+	fmt.Printf("value: %v 在第 %v 层\n", value, lev)
+}
+
+//输出层级
+func findLevel(n *Node, layer int, value int) int {
+	if n == nil {
+		return 0
+	}
+	if n.Value == value {
+		return layer
+	}
+	//
+	var lev int
+	lev = findLevel(n.Left, layer+1, value)
+	if lev == 0 {
+		return findLevel(n.Right, lev+1, value)
+	} else {
+		return lev
+	}
 }
 
 //广度优先
@@ -128,21 +146,4 @@ func NodeDepth(n *Node) int {
 		}
 	}
 	return depth
-}
-
-//输出层级
-func findLevel(n *Node, level int, key int) int {
-	if n == nil {
-		return 0
-	}
-	if n.Key == key {
-		return level
-	}
-	var lev int
-	lev = findLevel(n.Left, level+1, key)
-	if lev == 0 {
-		return findLevel(n.Right, lev+1, key)
-	} else {
-		return lev
-	}
 }
