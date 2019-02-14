@@ -80,28 +80,31 @@ func (n *Node) AfterTraver() {
 }
 
 //节点层级
-func NodeLevel(n *Node, value int) {
-	//初始化层级
-	level := 1
-	lev := findLevel(n, level, value)
-	fmt.Printf("value: %v 在第 %v 层\n", value, lev)
-}
+func NodeLevel(n *Node) {
+	//利用队列进行实现
+	tq := []*Node{}
+	//结果容器
+	//var res [][]int
+	if n != nil {
+		tq = append(tq, n)
+	}
+	for len(tq) > 0 {
+		//取一个元素
+		p := tq[0]
+		//var r []int
+		//r = append(r, p.Value)
+		//res = append(res, r)
+		fmt.Println(p.Value)
+		//更新队列
+		tq = tq[1:]
+		//
+		if n.Left != nil {
+			tq = append(tq, n.Left)
+		}
+		if n.Right != nil {
+			tq = append(tq, n.Right)
+		}
 
-//输出层级
-func findLevel(n *Node, layer int, value int) int {
-	if n == nil {
-		return 0
-	}
-	if n.Value == value {
-		return layer
-	}
-	//
-	var lev int
-	lev = findLevel(n.Left, layer+1, value)
-	if lev == 0 {
-		return findLevel(n.Right, lev+1, value)
-	} else {
-		return lev
 	}
 }
 

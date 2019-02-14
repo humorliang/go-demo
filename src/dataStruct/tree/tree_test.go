@@ -30,5 +30,5 @@ func TestTwoTree(t *testing.T) {
 	fmt.Println("\n节点深度：")
 	fmt.Println(NodeDepth(&root))
 	fmt.Println("\n节点层级：")
-	NodeLevel(&root,3)
+	NodeLevel(&root)
 }
