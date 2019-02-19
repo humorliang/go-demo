@@ -1,0 +1,6 @@
+syntax = "proto3"; //版本
+package gprotobuf; //包名
+//消息体
+message Hello {
+    string value = 1;  //类型和值   tag数字唯一
+}

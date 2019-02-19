@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/smallnest/rpcx/server"
-	"RpcDemo/base/service/sv"
+	"rpcDemo/base/service/sv"
 	"fmt"
 )
 
