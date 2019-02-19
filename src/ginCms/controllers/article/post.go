@@ -129,7 +129,7 @@ func GetDescArticle(c *gin.Context) {
 		ctx.Fail(500, "10001", "获取文章详情失败！")
 		return
 	}
-	//sql
+	//database
 	rows, err := db.Con.Query("SELECT a.id,a.desp,a.title,a.content,"+
 		"a.date,a.preview_img_url,a.user_id,a.tag_id,u.pen_name,t.tag_name "+
 		"FROM user u,article a,tag t "+
@@ -208,7 +208,7 @@ func DeleteArticle(c *gin.Context) {
 		ctx.Fail(500, "10001", "删除文章失败！")
 		return
 	}
-	//sql
+	//database
 	_, err = db.Con.Exec("DELETE FROM article WHERE id=?", artId.Data.PostID)
 	if err != nil {
 		comm.Log("error").Println(err)

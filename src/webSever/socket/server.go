@@ -4,6 +4,7 @@ import (
 	"net"
 	"github.com/smallnest/rpcx/log"
 	"fmt"
+	"io/ioutil"
 )
 
 func main() {
@@ -26,9 +27,17 @@ func main() {
 		//并发处理链接
 		go func() {
 			fmt.Println("请求client地址：", con.RemoteAddr())
+			//var buf []byte
+			//con.Read(buf)
+			//buf := bufio.NewReader(con)
+			byt, err := ioutil.ReadAll(con)
+			if err != nil {
+				fmt.Println("read error", err)
+			}
+			fmt.Println("请求内容：", string(byt))
 			//写内容
-			con.Write([]byte("hello client"))
-			con.Close()
+			con.Write([]byte("hello" + con.RemoteAddr().String() + " client"))
+			//con.Close()
 		}()
 	}
 }
