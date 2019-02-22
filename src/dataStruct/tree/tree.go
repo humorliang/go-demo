@@ -133,8 +133,11 @@ func NodeDepth(n *Node) int {
 }
 
 //节点的层次
-func NodeLevel(parent *Node, chrild *Node) int {
+func NodeLevel(parent *Node, child *Node) int {
 	rN := NodeDepth(parent)
-	cN := NodeDepth(chrild)
-	return rN-cN+1
+	cN := NodeDepth(child)
+	return rN - cN + 1
 }
+
+
+
