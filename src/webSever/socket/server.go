@@ -36,7 +36,7 @@ func main() {
 			}
 			fmt.Println("请求内容：", string(byt))
 			//写内容
-			con.Write([]byte("hello" + con.RemoteAddr().String() + " client"))
+			con.Write([]byte("hello" + con.RemoteAddr().String() + " client \n"))
 			//con.Close()
 		}()
 	}
