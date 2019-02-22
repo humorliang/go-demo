@@ -7,7 +7,7 @@ import (
 
 func TestTwoTree(t *testing.T) {
 	root := Node{Value: 1}
-	root.Left = &Node{ Value: 2}
+	root.Left = &Node{Value: 2}
 	root.Right = &Node{Value: 3}
 	root.Left.Left = Create(4)
 	root.Left.Right = Create(5)
@@ -29,6 +29,8 @@ func TestTwoTree(t *testing.T) {
 	fmt.Println(BreadthFirst(&root))
 	fmt.Println("\n节点深度：")
 	fmt.Println(NodeDepth(&root))
+	fmt.Println(NodeDepth(root.Right.Left.Right))
 	fmt.Println("\n节点层级：")
-	NodeLevel(&root)
+	fmt.Println(NodeLevel(&root, root.Right.Left))
+
 }

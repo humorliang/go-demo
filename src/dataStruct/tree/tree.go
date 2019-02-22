@@ -47,6 +47,9 @@ func Create(value int) *Node {
 
 3、后序遍历
 基本思想：先后序遍历左子树，然后再后序遍历右子树，最后再访问根结点即左—右—根。
+
+编程理解：
+对树结构进行递归遍历，结束条件为节点为nil
 */
 
 //前序遍历
@@ -79,38 +82,10 @@ func (n *Node) AfterTraver() {
 	n.GetValue()
 }
 
-//节点层级
-func NodeLevel(n *Node) {
-	//利用队列进行实现
-	tq := []*Node{}
-	//结果容器
-	//var res [][]int
-	if n != nil {
-		tq = append(tq, n)
-	}
-	for len(tq) > 0 {
-		//取一个元素
-		p := tq[0]
-		//var r []int
-		//r = append(r, p.Value)
-		//res = append(res, r)
-		fmt.Println(p.Value)
-		//更新队列
-		tq = tq[1:]
-		//
-		if n.Left != nil {
-			tq = append(tq, n.Left)
-		}
-		if n.Right != nil {
-			tq = append(tq, n.Right)
-		}
-
-	}
-}
-
 //广度优先
 func BreadthFirst(n *Node) ([]interface{}) {
-	//广度优先利用队列  
+	//广度优先利用队列  结果容器->节点队列->取出节点->更新节点队列->插入节点值到结果容器—>
+	//						->判断节点的左右子节点是否存在->放入节点容器
 
 	//结果容器
 	var result []interface{}
@@ -138,10 +113,16 @@ func BreadthFirst(n *Node) ([]interface{}) {
 
 //二叉树的深度
 func NodeDepth(n *Node) int {
+
+	/*
+	利用递归的思想：同时对左右节点进行递归，结束条件为无子节点
+	递归得到当前节点的深度数。
+	*/
 	//深度计算
 	depth := 0
 	//当节点为空时结束递归
 	if n != nil {
+		//对左右子节点进行深度判断
 		if NodeDepth(n.Left) > NodeDepth(n.Right) {
 			depth = NodeDepth(n.Left) + 1
 		} else {
@@ -149,4 +130,11 @@ func NodeDepth(n *Node) int {
 		}
 	}
 	return depth
+}
+
+//节点的层次
+func NodeLevel(parent *Node, chrild *Node) int {
+	rN := NodeDepth(parent)
+	cN := NodeDepth(chrild)
+	return rN-cN+1
 }
