@@ -1,5 +1,7 @@
 package linklist
 
+import "fmt"
+
 /*
 单链表：
 下面这副图是我们单链表运煤车队。
@@ -55,28 +57,133 @@ func (list *List) Append(n *Node) {
 	list.Size++
 }
 
+//头部添加节点
+func (list *List) Add(n *Node) {
+	//当前节点的下一个节点关联
+	n.Next = list.Head
+	//更新链表
+	list.Head = n
+	list.Size++
+}
+
 //删除指定节点
 func (list *List) Remove(data interface{}) error {
 	//取出链表的头节点
 	pre := list.Head
+	lsize := list.Size
 	//判断
 	if pre.Data == data {
 		//将链表的头节点变为 头结点的下一个节点
 		list.Head = pre.Next
+		list.Size--
 	} else {
 		//节点遍历  利用递归方式遍历
 		for pre.Next != nil {
 			//头节点的下一个节点  判断
 			if pre.Next.Data == data {
 				pre.Next = pre.Next.Next
+				list.Size--
 			} else {
 				pre = pre.Next
-				if  {
-					
-				}
 			}
 		}
+		if list.Size == lsize {
+			return fmt.Errorf("%v", "Data is not Exsit")
+		}
 	}
-	list.Size--
 	return nil
 }
+
+//链表的遍历
+func (list *List) SearchData(data interface{}) bool {
+	//获取链表的头结点
+	cur := list.Head
+	//遍历链表
+	for cur != nil {
+		if cur.Data == data {
+			return true
+		} else {
+			//将下一个进行遍历
+			cur = cur.Next
+		}
+	}
+	return false
+}
+
+//删除指定位置节点
+func (list *List) Delete(index int) error {
+	//取头节点
+	cur := list.Head
+	if index <= 0 {
+		cur = cur.Next
+	} else if list.Size <= index {
+		return fmt.Errorf("%v", "index is out range")
+	} else {
+		count := 0 //遍历位置统计  当前首节点
+		//while循环 遍历
+		for count != (index-1) && cur.Next != nil {
+			count++
+			//当前节点转化
+			cur = cur.Next
+		}
+		//当前节点的下一个节点
+		//count代表的当前节点
+		cur.Next = cur.Next.Next
+	}
+	return nil
+}
+
+//指定位置插入节点
+func (list *List) Insert(index int, data interface{}) {
+	//获取首节点
+	cur := list.Head
+	//索引为负数时默认从头部添加
+	if index < 0 {
+		list.Add(&Node{Data: data})
+	} else if list.Size < index {
+		list.Append(&Node{Data: data})
+	} else {
+		//位置统计
+		count := 0
+		//进行位置统计
+		for count < (index - 1) {
+			cur = cur.Next
+			count++
+		}
+		//循环退出cur在index-1位置  取代的是cur.next位置
+		node := &Node{Data: data}
+		//取代位置
+		node.Next = cur.Next
+		//更新位置
+		cur.Next = node
+		list.Size++
+	}
+}
+
+//判断链表是否为空
+func (list *List) IsEmpty() bool {
+	if list.Size == 0 {
+		return true
+	}
+	return false
+}
+
+//显示链表
+func (list *List) Show() []interface{} {
+	if list.Size == 0 {
+		return nil
+	} else {
+		var res []interface{}
+		cur := list.Head
+		res = append(res, cur.Data)
+		for cur.Next != nil {
+			//先添加在遍历
+			res = append(res, cur.Next.Data)
+			cur = cur.Next
+		}
+		return res
+	}
+}
+
+
+
