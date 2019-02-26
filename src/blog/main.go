@@ -1,12 +1,8 @@
 package main
 
-import (
-	_ "blog/routers"
-	"github.com/astaxie/beego"
-)
-
+import "flag"
 
 func main() {
-	beego.Run()
-}
+	runMode := flag.String("mode", "dev", "this is run mode args default dev")
 
+}
