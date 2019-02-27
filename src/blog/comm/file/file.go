@@ -4,6 +4,8 @@ import (
 	"os"
 	"fmt"
 	"path"
+	"blog/comm/setting"
+	"time"
 )
 
 //获取文件扩展名
@@ -74,9 +76,22 @@ func MustOpenSrc(fileName string, fileDir string) (*os.File, error) {
 		return nil, fmt.Errorf("mkdir is error:%s", err)
 	}
 	//打开文件流
-	f, err := OpenCreateAppend(src+fileName)
+	f, err := OpenCreateAppend(src + fileName)
 	if err != nil {
 		return nil, fmt.Errorf("open file error:%s", err)
 	}
 	return f, nil
+}
+
+//获取日志文件夹
+func GetRuntimeLogPath() string {
+	return fmt.Sprintf("%s%s",
+		setting.AppCfg.RuntimePath,
+		setting.AppCfg.LogPath)
+}
+
+//获取当天的日志文件
+func TodayLogFileName(prefix string) string {
+	return fmt.Sprintf("%s_%s.log", prefix,
+		time.Now().Format("2006-01-02"))
 }

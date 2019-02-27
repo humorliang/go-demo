@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"blog/controller/user"
+	"blog/controller/admin/user"
 )
 
 func Register(router *gin.Engine) {

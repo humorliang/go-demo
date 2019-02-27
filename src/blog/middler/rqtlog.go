@@ -7,7 +7,10 @@ import (
 )
 
 func LoggerConfig() gin.LoggerConfig {
-	f, err := file.OpenCreateAppend("info.log")
+	//请求日志
+	today := file.TodayLogFileName("Request")
+	runtimeDir := file.GetRuntimeLogPath()
+	f, err := file.MustOpenSrc(today, runtimeDir)
 	if err != nil {
 		fmt.Println(err)
 	}
