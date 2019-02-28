@@ -210,8 +210,8 @@ CREATE TABLE `ll_sms` (
   `return_info` varchar(255) NOT NULL DEFAULT '' COMMENT '短信服务商返回的全部信息',
   `client_ip` varchar(39) NOT NULL DEFAULT '' COMMENT '客户端IP',
   `url` varchar(255) NOT NULL DEFAULT '' COMMENT '发送短信请求的URL',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '创建时间',
-  `update_time` timestamp NOT NULL DEFAULT '1970-01-01 08:00:01' ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `create_time` datetime NOT NULL DEFAULT now() COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT now() ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='短信发送表';
 
@@ -234,8 +234,8 @@ CREATE TABLE `ll_cron` (
   `minute_end` int(11) NOT NULL DEFAULT '-1' COMMENT '结束的分钟：如15表示15分结束执行；-1表示不限制',
   `task_time` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '上次执行时间',
   `sort` int(11) NOT NULL DEFAULT '100' COMMENT '排序，升序执行',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '创建时间',
-  `update_time` timestamp NOT NULL DEFAULT '1970-01-01 08:00:01' ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `create_time` datetime NOT NULL DEFAULT now() COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT now() ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='计划任务表';
 
@@ -244,7 +244,7 @@ CREATE TABLE `ll_cron_log` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '计划任务日志ID 主键',
   `cron_id` int(11) NOT NULL DEFAULT '0' COMMENT '计划任务ID',
   `content` varchar(2480) NOT NULL DEFAULT '' COMMENT '执行的结果',
-  `create_time` datetime NOT NULL DEFAULT '1970-01-01 08:00:01' COMMENT '创建时间',
-  `update_time` timestamp NOT NULL DEFAULT '1970-01-01 08:00:01' ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  `create_time` datetime NOT NULL DEFAULT now() COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT now() ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='计划任务执行日志表';

@@ -4,15 +4,15 @@ import (
 	"flag"
 	"blog/comm/setting"
 	"github.com/gin-gonic/gin"
-	"blog/dbops/gmysql/db"
 	"blog/routers"
 	"blog/middler"
+	"fmt"
 )
 
 //运行模式
 var runMode = flag.String("mode", "dev", "this is run mode args default dev")
 
-func init() {
+func init()  {
 	//命令行解析
 	flag.Parse()
 
@@ -22,12 +22,13 @@ func init() {
 	//配置文件初始化
 	setting.ConfigInit(runMode)
 
-	//数据库初始化
-	db.MysqlInit()
-
+	fmt.Println("main init")
 }
 
+
 func main() {
+
+
 	//创建router路由
 	router := gin.New()
 	//f, err := os.Open("info.log")

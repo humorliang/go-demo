@@ -2,8 +2,10 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"ginCms/comm/e"
-	"blog/controller/response"
+	"blog/controller/data"
+	"fmt"
+	"blog/comm/e"
+	"blog/dbops"
 )
 
 type Id struct {
@@ -12,12 +14,21 @@ type Id struct {
 
 //登录
 func Login(c *gin.Context) {
-	//c.JSON(e.SUCCESS,response.SuccessResponse("login user"))
-	c.JSON(e.ERROR, response.FailResponse(1000, "login user"))
+	u := data.Admin{
+		Username: "user2",
+		Password: "123456",
+		Realname: "张三",
+	}
+	err := dbops.AddUser(u)
+	if err != nil {
+		fmt.Println(err)
+	}
+	c.JSON(e.SUCCESS, "")
 }
 
 //注册
 func Register(c *gin.Context) {
+
 }
 
 //删除

@@ -3,7 +3,7 @@ package setting
 import (
 	"time"
 	"github.com/go-ini/ini"
-	"github.com/smallnest/rpcx/log"
+	"log"
 )
 
 //app
