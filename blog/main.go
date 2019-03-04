@@ -2,11 +2,11 @@ package main
 
 import (
 	"flag"
-	"blog/comm/setting"
 	"github.com/gin-gonic/gin"
-	"blog/routers"
-	"blog/middler"
 	"fmt"
+	"github.com/humorliang/go-demo/blog/comm/setting"
+	"github.com/humorliang/go-demo/blog/middler"
+	"github.com/humorliang/go-demo/blog/routers"
 )
 
 //运行模式

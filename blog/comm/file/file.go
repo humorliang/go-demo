@@ -4,8 +4,8 @@ import (
 	"os"
 	"fmt"
 	"path"
-	"blog/comm/setting"
 	"time"
+	"github.com/humorliang/go-demo/blog/comm/setting"
 )
 
 //获取文件扩展名

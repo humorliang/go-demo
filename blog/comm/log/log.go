@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"blog/comm/file"
+	"github.com/humorliang/go-demo/blog/comm/file"
 )
 
 var logger = log.New(os.Stderr, "", log.LstdFlags)

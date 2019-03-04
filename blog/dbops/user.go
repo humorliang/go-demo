@@ -2,9 +2,9 @@ package dbops
 
 import (
 	_ "github.com/go-sql-driver/mysql"
-	"blog/controller/data"
 	"fmt"
-	"blog/utils/encryption"
+	"github.com/humorliang/go-demo/blog/controller/data"
+	"github.com/humorliang/go-demo/blog/utils/encryption"
 )
 
 /*

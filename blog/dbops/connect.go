@@ -3,9 +3,9 @@ package dbops
 import (
 	"database/sql"
 	"fmt"
-	"blog/comm/setting"
 	"log"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/humorliang/go-demo/blog/comm/setting"
 ) //mysql数据库连接驱动
 
 var dbCon *sql.DB

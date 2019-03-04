@@ -2,10 +2,11 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	"blog/controller/data"
 	"fmt"
-	"blog/comm/e"
-	"blog/dbops"
+
+	"github.com/humorliang/go-demo/blog/controller/data"
+	"github.com/humorliang/go-demo/blog/dbops"
+	"github.com/humorliang/go-demo/blog/comm/e"
 )
 
 type Id struct {
